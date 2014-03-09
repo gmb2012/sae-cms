@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Content Management Systems</title>
+
+		<meta name="description" content="CMS">
+		<meta name="author" content="Bjoern Zapadlo">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <link rel="stylesheet" href="css/reveal.min.css">
+        <link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+        <link rel="stylesheet" href="css/custom.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+            function zeroPad(num, places) {
+                var zero = places - num.toString().length + 1;
+                return Array(+(zero > 0 && zero)).join("0") + num;
+            }
+
+            if( window.location.search.match( /print-pdf/gi ) ) {
+                var link = document.createElement( 'link' );
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = 'css/print/pdf.css';
+                document.getElementsByTagName( 'head' )[0].appendChild( link );
+            }
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+        <style>
+            .questions .reveal .state-background {
+                background-image: url("images/tafel.jpg");
+                background-size:120% ;
+            }
+        </style>
+
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+                <section>
+                    <section>
+                        <h1>Content Management Systems</h1>
+                        <h3><span id="today"></span> @ SAE Institute</h3>
+                        <h3>Bjoern Zapadlo</h3>
+
+                        <script>
+                            var date = new Date();
+                            document.getElementById("today").innerHTML = date.getDate() + "." + zeroPad(date.getMonth() + 1, 2) + "." + date.getFullYear();
+                        </script>
+                    </section>
+
+                    <section>
+                        <h2>About me</h2>
+                        <p>
+                            Bjoern Zapadlo<br />
+                            Konstanz<br />
+                            <span id="age"></span> Jahre
+                            <script>
+                                document.getElementById("age").innerHTML = Math.floor((new Date() - new Date(1979, 5, 14)) / (1000*60*60*24*365))
+                            </script>
+                        </p>
+                        <p>
+                            Team Manager / Lead Developer HolidayCheck AG
+                        </p>
+                        <p>
+                            Informatik Studium 1999 - 2002<br />
+                            3 Agenturen in Stuttgart
+                        </p>
+                        <p>
+                            HolidayCheck International Websites / new Framework<br />
+                            Neckermann / Thomas Cook
+                        </p>
+                        <p>Dozent an der SAE, Dualen Hochschule Stuttgart, Hochschule Furtwangen</p>
+                        <p>PHP, Java, Scala, Javascript, CSS, Html,MySQL, MongoDB, Elasticsearch, ...</p>
+                        <p>Seit über 15 Jahren im Web unterwegs</p>
+                    </section>
+
+                    <section>
+                        <h2>Contact me</h2>
+                        <p>
+                            bjoern.zapadlo@gmail.com<br />
+                            http://www.zapadlo.de
+                        </p>
+                        <p>
+                            @BjoeZap
+                        </p>
+                        <p>
+                            https://www.xing.com/profile/Bjoern_Zapadlo<br />
+                            http://de.linkedin.com/pub/bjoern-zapadlo/36/889/1a5
+                        </p>
+                        <p>
+                            Facebook<br />
+                            Google+
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>HolidayCheck AG</h2>
+                        <p>
+                            Größtes deutsches Meinungsportal für Reise und Urlaub<br />
+                            Vermittlung von Reisen<br />
+                            Sitz in der Schweiz, direkt am Bodensee<br />
+                            Börsennotiert über Tomorrow Focus AG<br />
+                            Existiert seit 1999<br />
+                            Ausgründungen in mehreren europäischen Ländern<br />
+                            Über 300 Mitarbeiter<br />
+                        </p>
+                    </section>
+
+                    <section>
+                        <blink id="blinktag"><h1>Yes, we hire ;)</h1></blink>
+                        <h3>http://www.holidaycheck.de/jobs</h3>
+                        <script>
+                         var el = document.getElementById('blinktag');
+                         setInterval(function(){
+                           if ( el.style.visibility != 'hidden' ) {
+                             el.style.visibility = 'hidden';
+                           }
+                           else {
+                             el.style.visibility = '';
+                           }
+                         }, 500);
+                         </script>
+                    </section>
+
+                    <section>
+                        <h3>Jetzt aber Schluss mit der Werbung... ;)</h3>
+                    </section>
+
+                    <section>
+                        <h2>Agenda</h2>
+                        <ol>
+                            <li>Warum</li>
+                            <li>Typen von CMS</li>
+                            <li>Bestandteile eines CMS</li>
+                            <li>Marktübersicht</li>
+                            <li>Wordpress</li>
+                            <li>Contao</li>
+                            <li>Typo3</li>
+                            <li>Übung - Meine eigene CMS Seite</li>
+                            <li>Q&A</li>
+                        </ol>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h1>01. Warum</h1>
+                        <p>
+                            Pflege von Webseiten, Vorteile, Nachteile
+                        </p>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h1>02. Typen</h1>
+                        <p>
+                            Online, Offline, Enterprise CMS, Vor und Nachteile
+                        </p>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h1>03. Bestandteile</h1>
+                        <p>
+                            Artikel, Menüs, Assets, User, Admin-Schnittstelle, Staging, Frontend-Editing, Workflows, Statistiken,
+                            Interne Verlinkung, Templates, Plugins, Multilanguage inkl. Herangehensweise, Security, ...
+                        </p>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h1>04. Marktübersicht</h1>
+                        <p>
+                           tbd
+                        </p>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h1>05. Wordpress</h1>
+                        <p>
+                            Installation, Durchclicken, Plugins, Templates, Blog vs. CMS, Menüs, Widgets...
+                            Anpassung Template, Installation Plugin, Artikel anlegen, Seiten anlegen, Templates installieren,
+                            Statistik, Mehrsprachigkeit, meist installiertes system, vorteile, nachteile, geschichte, import export, preview
+                        </p>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h1>06. Contao</h1>
+                        <p>
+                            Voraussetzungen, Installation, Durchclicken, Plugins, Templates, Menüs, Widgets...
+                            Anpassung Template, Installation Plugin, Artikel anlegen, Seiten anlegen, Templates installieren, Staging
+                        </p>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h1>07. Typo3</h1>
+                        <p>
+                            Voraussetzungen, Installation, Durchclicken, Plugins, Templates, Menüs, Widgets...
+                            Anpassung Template, Installation Plugin, Artikel anlegen, Seiten anlegen, Templates installieren
+                        </p>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h1>08. Übung</h1>
+                        <p>Zielsetzung, ...</p>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h1>09. Q&A</h1>
+                    </section>
+
+                    <section data-state="questions">
+                        <h1>Fragen?</h1>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h1>08. Links</h1>
+                    </section>
+
+                    <section>
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </section>
+                </section>
+
+                <section>
+                    <h1>THE END</h1>
+                    <br /><br />
+                    <h3>Vielen Dank!</h3>
+                    <p>Made with <a href="http://lab.hakim.se/reveal-js">reveal.js</a>(with Html and JS)</p>
+                </section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+                width: 1400,
+                height: 800,
+                controls: true,
+				progress: true,
+				history: true,
+				center: false,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: '/socket.io/socket.io.js', async: true },
+                    { src: 'plugin/notes-server/client.js', async: true }
+				]
+			});
+        </script>
+
+	</body>
+</html>
