@@ -1,0 +1,49 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #eeeeee;
+}
+
+a, a:active,a:hover{
+    color: inherit;
+}
+
+.container {
+    background-color: #ffffff;
+}
+
+h1, .h1 {
+    font-size: 62px;
+    margin-top: 0px;
+}
+
+.page-header {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    border-bottom: 0px;
+}
+
+/* NAVIGATION BAR */
+.navbar-nav > li > a {
+    padding: 0px;
+    line-height: inherit;
+    margin-right: 15px;
+    font-size: 16px;
+    margin-top: 24px;
+    color: rgb(200, 200, 200);
+}
+
+.navbar-nav > li > a:hover {
+    color: inherit;
+    background: none;
+}
+
+.navbar-nav > li.active > a {
+    font-size: 40px;
+    margin-top: 0px;
+    color: inherit;
+}
+
+.big-bullet {
+    background-color: #428BCA;
+    height: 62px;
+}

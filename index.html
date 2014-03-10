@@ -168,19 +168,156 @@
                 <section>
                     <section>
                         <h1>01. Template Engines</h1>
-                        <p>Before we start</p>
-                        <p>Übersicht: http://en.wikipedia.org/wiki/Comparison_of_web_template_engines</p>
-                        <p>MVC, Aufteuilung von Arbeit, Sicherheit</p>
                         <p>Was sind Template Engines und wozu werden sie eingesetzt, Voraussetzungen, Handbuch und Links, jeweils => Twig, Smarty, Fluid, Jeweils ein Beispiel</p>
                         <p>smarty-Sytax, Sprachkonstrukte (Variablen, Schleifen, Kontrollstrukturen), $smarty, includes, Variablen-Modifier, Funktionen (html_*, include, literal, etc.)</p>
                     </section>
 
                     <section>
                         <h2>Before we start</h2>
+                        <h3>Template Engines sind die Basis von modernen Webapplikationen</h3>
+                        <ul>
+                            <li>Frameworks: Zend, Symfony, ...</li>
+                            <li>CMS</li>
+                        </ul>
                     </section>
 
                     <section>
-                        <h2>Warum Templates</h2>
+                        <h2>Templates?!?</h2>
+                        <p>
+                            Templates (der englische Begriff für Schablonen), sind Vorlagen, die mit Inhalt gefüllt werden können
+                        </p>
+                        <p>
+                            Eine Vorlage (englisch template) dient in der Datenverarbeitung zur Erstellung von Dokumenten oder Dokumentteilen.
+                            Sie stellt eine Art „Gerüst“ dar, die einen Teil des Inhaltes oder der Gestaltung des Dokumentes vorgibt.
+                            Durch Einsetzen der fehlenden Bestandteile wird die Vorlage zu einem vollständigen Dokument ergänzt. Sie werden hauptsächlich für DTP- oder Textverarbeitungsprogramme und Webseiten genutzt.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>Template Engines</h2>
+                        <p>
+                            Eine Template-Engine (von engl. Vorlage und Maschine) ist eine Software, die eine Datei (das Template) verarbeitet, und bestimmte Platzhalter darin mit jeweils aktuellen Inhalten füllt.
+                            Die Bezeichnungen Templateklasse und Templatesystem werden oft als Synonym für eine Template-Engine verwendet.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>Warum Templates?</h2>
+                        <div class="fragment">
+                            <ul>
+                                <li>MVC-Architektur</li>
+                                <li>Aufteilung von Aufgaben möglich</li>
+                                <li>Sicherheit (XSS)</li>
+                                <li>Komfort über Helper-Funktionen</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2>Exkurs: MVC</h2>
+                        <h3>Model View Controller</h3>
+                        <p>
+                            Der englischsprachige Begriff model view controller (MVC, englisch für Modell-Präsentation-Steuerung)
+                            ist ein Muster zur Strukturierung von Software-Entwicklung in die drei Einheiten Datenmodell (engl. model),
+                            Präsentation (engl. view) und Programmsteuerung (engl. controller). Manche Autoren stufen es als Architekturmuster ein,
+                            andere als Entwurfsmuster.
+                            Ziel des Musters ist ein flexibler Programmentwurf, der eine spätere Änderung oder Erweiterung erleichtert und eine
+                            Wiederverwendbarkeit der einzelnen Komponenten ermöglicht.
+                            Es ist dann zum Beispiel möglich, eine Anwendung zu schreiben, die das gleiche Modell benutzt,
+                            aber einerseits eine Windows- oder Linux-Oberfläche realisiert, andererseits aber auch eine Weboberfläche beinhaltet.
+                            Beides basiert auf dem gleichen Modell, nur Controller und View müssen dabei jeweils neu konzipiert werden.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>MVC - Komponenten</h2>
+                        <p>
+                            <img src="images/mvc.png" />
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>Modell (model)</h2>
+                        <p>
+                            Das Modell enthält die darzustellenden Daten und gegebenenfalls (abhängig von der Implementierung des MVC-Patterns)
+                            auch die Geschäftslogik. Es ist von Präsentation und Steuerung unabhängig.
+                            Die Bekanntgabe von Änderungen an relevanten Daten im Modell geschieht nach dem Entwurfsmuster „Beobachter“.
+                            Das Modell ist das zu beobachtende Subjekt, auch Publisher, also „Veröffentlicher“, genannt
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>Steuerung (controller)</h2>
+                        <p>
+                            Die Steuerung verwaltet eine oder mehrere Präsentationen, nimmt von ihnen Benutzeraktionen entgegen,
+                            wertet diese aus und agiert entsprechend. Zu jeder Präsentation existiert eine eigene Steuerung.
+                            Die Steuerung sorgt dafür, dass Benutzeraktionen wirksam werden, z.B. durch Änderung der Präsentation
+                            (z.B. Verschieben des Fensters) oder durch Weiterleiten an das Modell (z.B. Übernahme von Eingabedaten oder
+                            Auslösen von Verarbeitungen). Als es noch keine Objektorientierung gab, bestand ein Modell nur aus Daten, und die
+                            Steuerung hat die Daten oft direkt aktualisiert. In einer objektorientierten Umgebung ist es dagegen besser, wenn das
+                            Modell die Geschäftsobjekte enthält und die Steuerung sich darauf beschränkt, Benutzereingaben (Daten und Methodenaufrufe)
+                            weiterzuleiten, von der Präsentation an das Modell.
+                            Die Steuerung enthält weiterhin Mechanismen, um die Benutzerinteraktionen der Präsentation einzuschränken.
+                            Die Steuerung kann in manchen Implementierungen ebenfalls zu einem „Beobachter“ des Modells werden,
+                            um bei Änderungen der Daten den View direkt zu manipulieren.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>Präsentation (view)</h2>
+                        <p>
+                            Die Präsentationsschicht ist für die Darstellung der benötigten Daten aus dem Modell und die Entgegennahme von
+                            Benutzerinteraktionen zuständig. Sie kennt sowohl ihre Steuerung als auch das Modell, dessen Daten sie präsentiert,
+                            ist aber nicht für die Weiterverarbeitung der vom Benutzer übergebenen Daten zuständig.
+                            Im Regelfall wird die Präsentation über Änderungen von Daten im Modell mithilfe des Entwurfsmusters „Beobachter“
+                            unterrichtet und kann daraufhin die aktualisierten Daten abrufen. Die Präsentation verwendet oft das Entwurfsmuster „Kompositum“.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>Exkurs: XSS</h2>
+                        <h3>Cross Site Scripting</h3>
+                        <p>
+                            Cross-Site-Scripting (XSS; deutsch Websiteübergreifendes Scripting) bezeichnet das Ausnutzen einer Computersicherheitslücke
+                            in Webanwendungen, indem Informationen aus einem Kontext, in dem sie nicht vertrauenswürdig sind,
+                            in einen anderen Kontext eingefügt werden, in dem sie als vertrauenswürdig eingestuft werden.
+                            Aus diesem vertrauenswürdigen Kontext kann dann ein Angriff gestartet werden.
+                        </p>
+                        <p>
+                            Ziel ist es meist, an sensible Daten des Benutzers zu gelangen, um beispielsweise seine Benutzerkonten zu
+                            übernehmen (Identitätsdiebstahl).
+                        </p>
+                        <p>
+                            Cross-Site-Scripting ist eine Art der HTML Injection. Cross-Site-Scripting tritt dann auf, wenn eine Webanwendung Daten annimmt,
+                            die von einem Nutzer stammen, und diese Daten dann an einen Browser weitersendet, ohne den Inhalt zu überprüfen.
+                            Damit ist es einem Angreifer möglich, auch Skripte indirekt an den Browser des Opfers zu senden und damit Schadcode auf der Seite
+                            des Clients auszuführen.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>Vorteile</h2>
+                        <ul>
+                            <li>Programm-Code (PHP, Python, Perl) wird vom Markup (HTML) getrennt.</li>
+                            <li>Designer und Programmierer können gleichzeitig an einem Projekt arbeiten.</li>
+                            <li>WYSIWYG-Editoren können verwendet werden.</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Nachteile</h2>
+                        <ul>
+                            <li>Template-Engines erzeugen immer zusätzlichen Overhead.</li>
+                            <li>Template-Engines müssen im Gebrauch erlernt werden. Neben der neuen Syntax sind auch oft grundlegende Kenntnisse der objektorientierten Programmierung Voraussetzung.</li>
+                            <li>Template-Engines sind auf eine textuelle Ausgabe beschränkt.</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Marktübersicht</h2>
+                        <p>
+                            <a href="Übersicht: http://en.wikipedia.org/wiki/Comparison_of_web_template_engines" target="_blank">Übersicht: http://en.wikipedia.org/wiki/Comparison_of_web_template_engines</a>
+                        </p>
                     </section>
 
                     <section>
@@ -190,7 +327,62 @@
 
                     <section>
                         <h2>Smarty</h2>
-                        <p>Bla bla</p>
+                        <p>
+                            Smarty ist eine freie (unter der LGPL veröffentlichte) Template Engine, die als PHP-Bibliothek vorliegt.
+                            Sie wurde mit dem Ziel entworfen, bei der Entwicklung von Webapplikationen die Trennung von Code und Ausgabe zu ermöglichen.
+                            Die Ausgabe erfolgt meist in HTML, möglich ist jedes textbasierte Dateiformat, zum Beispiel auch XML.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>Handbuch</h2>
+                        <p>
+                            <a href="http://www.smarty.net/docsv2/de/">http://www.smarty.net/docsv2/de/</a>
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>Voraussetzungen</h2>
+                    </section>
+
+                    <section>
+                        <h2>Installation</h2>
+                    </section>
+
+                    <section>
+                        <h2>Grundlegende Syntax</h2>
+                    </section>
+
+                    <section>
+                        <h2>Kommentare</h2>
+                    </section>
+
+                    <section>
+                        <h2>Variablen</h2>
+                    </section>
+
+                    <section>
+                        <h2>Funktionen</h2>
+                    </section>
+
+                    <section>
+                        <h2>Modifikatoren</h2>
+                    </section>
+
+                    <section>
+                        <h2>If / else</h2>
+                    </section>
+
+                    <section>
+                        <h2>Iteration</h2>
+                    </section>
+
+                    <section>
+                        <h2>Include</h2>
+                    </section>
+
+                    <section>
+                        <h2>Beispiel</h2>
                     </section>
 
                     <section>
