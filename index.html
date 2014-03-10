@@ -170,8 +170,50 @@
                         <h1>01. Template Engines</h1>
                         <p>Before we start</p>
                         <p>Übersicht: http://en.wikipedia.org/wiki/Comparison_of_web_template_engines</p>
+                        <p>MVC, Aufteuilung von Arbeit, Sicherheit</p>
                         <p>Was sind Template Engines und wozu werden sie eingesetzt, Voraussetzungen, Handbuch und Links, jeweils => Twig, Smarty, Fluid, Jeweils ein Beispiel</p>
                         <p>smarty-Sytax, Sprachkonstrukte (Variablen, Schleifen, Kontrollstrukturen), $smarty, includes, Variablen-Modifier, Funktionen (html_*, include, literal, etc.)</p>
+                    </section>
+
+                    <section>
+                        <h2>Before we start</h2>
+                    </section>
+
+                    <section>
+                        <h2>Warum Templates</h2>
+                    </section>
+
+                    <section>
+                        <h2>Übung 01</h2>
+                        <h3>Lebenslauf als PHP</h3>
+                    </section>
+
+                    <section>
+                        <h2>Smarty</h2>
+                        <p>Bla bla</p>
+                    </section>
+
+                    <section>
+                        <h2>Übung 02</h2>
+                        <h3>Lebenslauf als Smarty Template</h3>
+                    </section>
+
+                    <section>
+                        <h2>Twig</h2>
+                        <p>Bla bla</p>
+                    </section>
+
+                    <section>
+                        <h2>Übung 03</h2>
+                        <h3>Lebenslauf als Twig Template</h3>
+                    </section>
+
+                    <section>
+                        <h2>Typoscript</h2>
+                    </section>
+
+                    <section>
+                        <h2>Fluid</h2>
                     </section>
                 </section>
 
@@ -179,7 +221,132 @@
                     <section>
                         <h1>02. Warum</h1>
                         <p>
-                            Pflege von Webseiten, Vorteile, Nachteile
+                            Pflege von Webseiten, Vorteile, Nachteile, Merkmale
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>Was ist ein CMS</h2>
+                        <p>
+                            Ein Informationssystem, dass Inhalte organisiert und verwaltet
+                        </p>
+                        <div class="fragmented">
+                            <p>
+                                So gesehen sind auch Office Produkte und Email-Clients Systeme, um Inhalte zu Pflegen
+                            </p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2>Inhalte???</h2>
+                        <ul>
+                            <li>Text</li>
+                            <li>Bilder</li>
+                            <li>Videos</li>
+                            <li>Audiodateien</li>
+                            <li>PDF-Dokumente</li>
+                            <li>...</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>CRUD</h2>
+                        <ul>
+                            <li><strong>C</strong>reate</li>
+                            <li><strong>U</strong>pdate</li>
+                            <li><strong>D</strong>elete</li>
+                        </ul>
+                        <p>
+                            Manipulation von Inhalten
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>Aufgabe eines CMS</h2>
+                    </section>
+
+                    <section>
+                        <h2>Merkmale eines CMS</h2>
+                        <p>
+                            Was sind die Grundsätze eines CMS?
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>01 - Strikte Trennung von Inhalt und Layout</h2>
+                        <p>
+                            Im Gegensatz zu statischen Webseiten werden die Inhalte (Texte, Bilder, Videoclips etc.) sowie die Formatvorlagen (Templates) in
+                            einem CMS separat gespeichert. Wenn eine entsprechende Webseite aufgerufen wird, wird diese dynamisch generiert,
+                            indem in ein entsprechendes Template die verschiedenen Inhalte geladen und angeordnet werden.
+                        </p>
+                        <p>
+                            <a href="http://www.csszengarden.com/">http://www.csszengarden.com/</a>
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>02 - Komponenten-Management</h2>
+                        <p>
+                            In Content Management Systemen werden die einzelnen von den Autoren gelieferten Inhalte mit Metadaten versehen und in einer
+                            Komponenten-Datenbank (content component database) abgelegt.
+                            Redakteure können nun aus diesen einzelnen Komponenten (Texte, Bilder, ...) Artikel zusammensetzen,
+                            die dann publiziert werden können. Oft wird die auch Asset-Management genannt.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>02 - Workflow-Management</h2>
+                        <p>
+                            Ein CMS bietet Mechanismen, die eine Definition und Kontrolle des Workflows (Ablauf der Arbeitsschritte) ermöglichen.
+                            So werden die von den Redakteuren zusammengesetzten Artikel vom Chefredakteur überprüft,
+                            bei Bedarf redigiert und von diesem für die Online-Publikation freigegeben.
+                            Die auf der Webseite publizierten Artikel bleiben für eine bestimmte Zeit online und werden nach Ablauf dieser Zeit im Archiv abgelegt.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>Brauch ich ein CMS?</h2>
+                        <ul>
+                            <li>Deine Seite ist groß</li>
+                            <li>Wird of geändert</li>
+                            <li>Hat mehrere Authoren</li>
+                        </ul>
+                        <div class="fragment">
+                            <h3>
+                                Dann Ja!
+                            </h3>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2>Aber</h2>
+                        <h3>Ein CMS braucht Liebe</h3>
+                        <ul>
+                            <li>Updates</li>
+                            <li>Sicherheitslöcher</li>
+                            <li>Geld für Webspace</li>
+                            <li>...</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Vorteile</h2>
+                        <p>Direct editing of content
+                            Global updating
+                            Timed content
+                            Versioning and rollback
+                            Searching (some)
+                            Content Re-use
+                            All adds up to greater efficiency, less work, less duplication of effort, more speed and ease in making changes.</p>
+                    </section>
+
+                    <section>
+                        <h2>Nachteile</h2>
+                        <p>
+                            Can be expensive to purchase/implement
+                            Great deal of work/planning
+                            Requires overhaul of existing web operation
+
                         </p>
                     </section>
                 </section>
@@ -189,6 +356,17 @@
                         <h1>03. Typen</h1>
                         <p>
                             Online, Offline, Enterprise CMS, Vor und Nachteile, Systemvoraussetzungen (Webserver vs. Webspace)
+                            Kommerziell, open source, spezielle CMS (eingeschränkt auf bestimmte Typen)
+                        </p>
+                        <p>
+                            Statische Systeme
+                                unverändert abgerufen
+                            Volldynamische Systeme
+                                erst bei Aufruf dynamisch erzeugt
+                            Hybride Systeme
+                                kombiniert aus statisch und volldynamisch
+                            Halbstatische Systeme
+                                dynamisch erst durch Code
                         </p>
                     </section>
                 </section>
@@ -197,18 +375,48 @@
                     <section>
                         <h1>04. Bestandteile</h1>
                         <p>
-                            Artikel, Menüs, Assets, User, Admin-Schnittstelle, Staging, Frontend-Editing, Workflows, Statistiken,
-                            Interne Verlinkung, Templates, Plugins, Multilanguage inkl. Herangehensweise, Security, ...
+                            Artikel, Menüs, Assets, User => Rechte und Rollen, Admin-Schnittstelle, Staging, Frontend-Editing, Workflows, Statistiken,
+                            Interne Verlinkung, Templates, Plugins, Multilanguage inkl. Herangehensweise, Security, SEO, Barrierfreiheit, Suche...
+                            Theming, Import und Export (RSS)
                         </p>
+                    </section>
+
+                    <section>
+                        <h2>Was denkt ihr?</h2>
+                        <p>Was gehört alles zu einem CMS?</p>
+                    </section>
+
+                    <section>
+                        <h2>Systemarchitektur</h2>
+                        <p>Hier kommt ne fancy Grafik...</p>
                     </section>
                 </section>
 
                 <section>
                     <section>
                         <h1>04. Marktübersicht</h1>
-                        <p>
-                           tbd
-                        </p>
+                    </section>
+
+                    <section>
+                        <h3>Es gibt über 15.000 CMS</h3>
+                        <h3>Wie soll ich das richtige finden?</h3>
+                    </section>
+
+                    <section>
+                        <h2>Vergleichsseiten</h2>
+                        <ul>
+                            <li><a href="http://cmsmatrix.org/" target="_blank">http://cmsmatrix.org/</a></li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Über den Tellerrand</h2>
+                        <ul>
+                            <li>Drupal</li>
+                            <li>Joomla</li>
+                            <li>OpenX (AdServer)</li>
+                            <li>...</li>
+                        </ul>
                     </section>
                 </section>
 
@@ -219,7 +427,7 @@
                             Installation, Durchclicken, Plugins, Templates, Blog vs. CMS, Menüs, Widgets...
                             Anpassung Template, Installation Plugin, Artikel anlegen, Seiten anlegen, Templates installieren,
                             Statistik, Mehrsprachigkeit, meist installiertes system, vorteile, nachteile, geschichte, import export, preview
-                            Interessante Seiten (Hilfe, Plugins, ...), Case Studies
+                            Interessante Seiten (Hilfe, Plugins, ...), Case Studies, Workflow mit Hilfe der Rollen
                         </p>
                     </section>
                 </section>
@@ -272,7 +480,9 @@
 
                     <section>
                         <ul>
-                            <li></li>
+                            <li><a href="http://www.coffeebreak-blog.de/top-5-content-management-systeme/" target="_blank">http://www.coffeebreak-blog.de/top-5-content-management-systeme/</a></li>
+                            <li><a href="http://www.opensourcecms.com/">http://www.opensourcecms.com/</a></li>
+                            <li><a href="http://blog.maettig.com/2005/06/09/cms" target="_blank">http://blog.maettig.com/2005/06/09/cms</a></li>
                         </ul>
                     </section>
                 </section>
