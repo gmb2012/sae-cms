@@ -47,3 +47,7 @@ h1, .h1 {
     background-color: #428BCA;
     height: 62px;
 }
+
+h4, .h4 {
+    margin-top: 0px;
+}
