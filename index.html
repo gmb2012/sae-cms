@@ -152,7 +152,7 @@
                         <h2>Agenda</h2>
                         <ol>
                             <li>Template-Engines</li>
-                            <li>Warum</li>
+                            <li>Basics</li>
                             <li>Typen von CMS</li>
                             <li>Bestandteile eines CMS</li>
                             <li>Marktübersicht</li>
@@ -836,10 +836,7 @@ page.10.wrap = <h2>|</h2>
 
                 <section>
                     <section>
-                        <h1>02. Warum</h1>
-                        <p>
-                            Pflege von Webseiten, Vorteile, Nachteile, Merkmale
-                        </p>
+                        <h1>02. Basics</h1>
                     </section>
 
                     <section>
@@ -873,13 +870,24 @@ page.10.wrap = <h2>|</h2>
                             <li><strong>U</strong>pdate</li>
                             <li><strong>D</strong>elete</li>
                         </ul>
+                        <h3>Manipulation von Inhalten</h3>
+                    </section>
+
+                    <section>
+                        <h2>Wikipedia sagt</h2>
                         <p>
-                            Manipulation von Inhalten
+                            Ein Content-Management-System (kurz: CMS, deutsch „Inhaltsverwaltungssystem“) ist eine Software zur gemeinschaftlichen Erstellung,
+                            Bearbeitung und Organisation von Inhalten (Content) zumeist in Webseiten, aber auch in anderen Medienformen.
+                            Diese können aus Text- und Multimedia-Dokumenten bestehen.
+                            Ein Autor mit Zugriffsrechten kann ein solches System in vielen Fällen mit wenig Programmier- oder HTML-Kenntnissen bedienen,
+                            da die Mehrzahl der Systeme über eine grafische Benutzeroberfläche verfügen.
                         </p>
                     </section>
 
                     <section>
                         <h2>Aufgabe eines CMS</h2>
+                        <h3>Wir definieren</h3>
+                        <h3>Pflege von Webseiten</h3>
                     </section>
 
                     <section>
@@ -898,6 +906,9 @@ page.10.wrap = <h2>|</h2>
                         </p>
                         <p>
                             <a href="http://www.csszengarden.com/">http://www.csszengarden.com/</a>
+                        </p>
+                        <p>
+                            Medienneuttralität ist hier ebenfalls ein Grundsatz, so dass Ausgabe auch als PDF, RSS, ... möglich sein soll.
                         </p>
                     </section>
 
@@ -948,23 +959,27 @@ page.10.wrap = <h2>|</h2>
 
                     <section>
                         <h2>Vorteile</h2>
-                        <p>Direct editing of content
-                            Global updating
-                            Timed content
-                            Versioning and rollback
-                            Searching (some)
-                            Content Re-use
-                            All adds up to greater efficiency, less work, less duplication of effort, more speed and ease in making changes.</p>
+                        <ul>
+                            <li>Direktes editieren von Inhalt, teilweise auch über das Frontend möglich</li>
+                            <li>Globales Update z.B. von Links</li>
+                            <li>Zeitgesteuerte Inhalte möglich</li>
+                            <li>Einfaches editieren</li>
+                            <li>Versionierung der Inhalte</li>
+                            <li>Rollback auf frühere Versionen</li>
+                            <li>Suchen</li>
+                            <li>Wiederverwendbarkeit von Inhalten</li>
+                        </ul>
+                        <h3>Effizienter, schneller, weniger Arbeit und Duplizierung</h3>
                     </section>
 
                     <section>
                         <h2>Nachteile</h2>
-                        <p>
-                            Can be expensive to purchase/implement
-                            Great deal of work/planning
-                            Requires overhaul of existing web operation
-
-                        </p>
+                        <ul>
+                            <li>Ausgaben für Webspache</li>
+                            <li>Aufwand / Kosten für die Implementierung</li>
+                            <li>Kenntnisse der eigenen Prozesse notwendig</li>
+                            <li>Planung im Vorfeld notwendig => Anforderungen</li>
+                        </ul>
                     </section>
                 </section>
 
@@ -972,30 +987,138 @@ page.10.wrap = <h2>|</h2>
                     <section>
                         <h1>03. Typen</h1>
                         <p>
-                            Online, Offline, Enterprise CMS, Vor und Nachteile, Systemvoraussetzungen (Webserver vs. Webspace)
                             Kommerziell, open source, spezielle CMS (eingeschränkt auf bestimmte Typen)
                         </p>
+                    </section>
+
+                    <section>
+                        <h2>Volldynamische Systeme</h2>
+                        <h3>Auch Online oder Web-CMS genannt</h3>
                         <p>
-                            Statische Systeme
-                                unverändert abgerufen
-                            Volldynamische Systeme
-                                erst bei Aufruf dynamisch erzeugt
-                            Hybride Systeme
-                                kombiniert aus statisch und volldynamisch
-                            Halbstatische Systeme
-                                dynamisch erst durch Code
+                            Volldynamische Systeme erzeugen angeforderte Dokumente bei jedem Aufruf dynamisch neu, das heißt,
+                            Vorlagen und Inhalte werden erst bei Abruf interpretiert bzw. zusammengeführt und ausgegeben. Vorteile:
+                            Die Seite ist immer „aktuell“; eine Personalisierung für den Surfer ist in der Regel sehr einfach oder sogar bereits vorhanden.
+                            Nachteile: Die Neuberechnung bei jeder Seitenauslieferung kann unter hoher Last (zum Beispiel hoher Besucherandrang)
+                            zu einer verzögerten Auslieferung der Seiten oder bei mangelhafter Ausstattung/Konfiguration an Rechenkapazität im Verhältnis zur
+                            Anzahl gleichzeitig bedienter Nutzer zur Serverüberlastung und im Extremfall zum Systemstillstand führen.
+                            Eine Maßnahme zur Verringerung der Last ist Caching.
                         </p>
+                        <p>
+                            Software läuft im Internet auf dem Webserver (z.B. in PHP). Die meisten CMS sind online CMS.
+                        </p>
+                        <p>
+                            Vorteile sind hier, dass man von überall editieren kann.<br />
+                            Nachteilig wirken sich kosten für Webspace / Infrastruktur und eine evtl. Anfälligkeit für Angriffe aus.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>Statische Systeme</h2>
+                        <h3>Offline CMS</h3>
+                        <p>
+                            Statische Systeme erzeugen die einzelnen Webseiten aus den Vorlagen und Inhalten als statisch abgelegte Datei im Dateisystem oder ggf.
+                            in einer Datenbank. Als Endprodukt erhält man somit Dokumente, die keinerlei Interpretation seitens einer Servertechnologie wie z. B.
+                            ASP, JSP oder PHP mehr benötigen und daher direkt durch den Webserver ausgegeben werden können, was sich in der Ausgabegeschwindigkeit
+                            zeigt. Dies hat den Vorteil, dass selbst einfachere Webhosting-Produkte als Basis ausreichend sein können.
+                            Nachteil kann sein, dass möglicherweise gewachsene Anforderungen durch größere Komplexität in Verbindung mit dem Wunsch nach sehr
+                            kurzen Aktualisierungszyklen ein solches System als ungeeignet entpuppen. Rein statische Systeme bilden den historischen Ursprung
+                            der CMS und werden jedoch – in dieser Ursprungsform – nur noch selten eingesetzt.
+                        </p>
+                        <p>
+                            Software generiert z.B. im Firmennetzwerk statische Html-Dateien, die bei Bedarf auf den Webserver hochgeladen werden.
+                        </p>
+                        <p>
+                            Vorteilig sind hier die geringen Anforderungen an den Webserver, negativ die fehlenden Interaktionsmöglichkeiten und Probleme mit
+                            der Aktualisierung (wann und nicht von überall möglich).
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>Hybride Systeme</h2>
+                        <p>
+                            Hybride Systeme kombinieren die Vorteile der statischen und der volldynamischen Seitenerzeugung.
+                            Lediglich die Inhalte, die dynamisch aus einer Datenbank generiert werden müssen (z. B. News, Suchabfragen, personalisierte Inhalte oder Shopdaten),
+                            werden zur Laufzeit aus der Datenbank ausgelesen. Alle anderen Inhalte, die nicht laufend Änderungen unterzogen werden
+                            (wie etwa das Seitengerüst, die Navigation, aber auch bestimmte Texte und Bilder), liegen statisch vor.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>Halbstatische Systeme</h2>
+                        <p>
+                            Halbstatische Systeme generieren den Inhalt so, dass dieser statisch ist, aber gleichzeitig auch dynamisch, d. h.,
+                            es werden alle Daten direkt in statisch generierten Dateien gespeichert, die dann bei Abruf sofort ausgegeben werden.
+                            Die dynamischen Inhalte werden dann generiert, wenn ein Code in der Programmsprache in die Datei eingebunden wird oder
+                            einzelne Datensätze geändert beziehungsweise neu angelegt werden.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>Enterprise Content Management</h2>
+                        <p>
+                            Enterprise-Content-Management (ECM) umfasst die Methoden, Techniken und Werkzeuge zur Erfassung, Verwaltung, Speicherung, Bewahrung und
+                            Bereitstellung von Content und Dokumenten zur Unterstützung organisatorischer Prozesse im Unternehmen.
+                            ECM führt strukturierte, schwach strukturierte und unstrukturierte Informationen zusammen.
+                        </p>
+                        <p>
+                            Die Bezeichnung Enterprise-Content-Management ist ein modernes Kunstwort, das Produkte, Lösungen, einen Markt und eine
+                            Branche beschreiben soll.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>Enterprise Content Management</h2>
+                        <p>
+                            Enterprise-Content-Management geht vom Ansatz aus, alle Informationen eines Unternehmens auf einer einheitlichen Plattform zur Nutzung intern,
+                            im Partnerverbund und extern bereitzustellen („Unified-Federated-Repository“, Data-/ Document-/ Content-Warehouse).
+                            ECM umfasst herkömmliche Informationstechniken wie Dokumentenmanagement, Knowledge Management (Wissensmanagement), Workflow-Management,
+                            Archivierung, etc. und integriert die Host- und Client/Server-Welt mit Portal- und anderen Internet-Techniken.
+                            <strong>Ziel von ECM ist, Daten- und Dokumentenredundanz zu vermeiden</strong> (jede Information existiert nur einmal),
+                            den Zugriff einheitlich zu regeln, unabhängig von Quelle und Nutzung beliebige Informationen bereitzustellen und als Dienst allen Anwendungen
+                            gleichförmig zur Verfügung zu stellen
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>Open Source CMS</h2>
+                        <h3>Kostenlos</h3>
+                        <p>
+                            Open Source bzw. quelloffen sind Werke, die ihren Quelltext offenlegen und einige weitere Bedingungen erfüllen.
+                            Im engeren Sinne handelt es sich dabei um Software, die unter einer von der Open Source Initiative (OSI) anerkannten Lizenz steht.
+                        </p>
+                        <p>
+                            Open-Source-Software (OSS) ist nahezu deckungsgleich mit Freier Software.
+                            Der Unterschied liegt in den vertretenen Werten: Für Freie Software ist die Nutzerkontrolle über die Software sowie die
+                            Kooperation mit Anderen ein wichtiges soziales, politisches und ethisches Anliegen.
+                            Bei der OSI ist der vertretene Wert primär der praktische Nutzen und die Entwicklungsmethode.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>Kommerzielle CMS</h2>
+                        <h3>Kosten Geld</h3>
+                        <ul>
+                            <li>Einmalig</li>
+                            <li>Jahreslizenz</li>
+                            <li>SaaS</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Spezielle CMS</h2>
+                        <h3>Eher ein spezieller Anwendungsbereich</h3>
+                        <ul>
+                            <li>Mediawiki</li>
+                            <li>PHPBB</li>
+                            <li>Magento</li>
+                            <li>...</li>
+                        </ul>
                     </section>
                 </section>
 
                 <section>
                     <section>
                         <h1>04. Bestandteile</h1>
-                        <p>
-                            Artikel, Menüs, Assets, User => Rechte und Rollen, Admin-Schnittstelle, Staging, Frontend-Editing, Workflows, Statistiken,
-                            Interne Verlinkung, Templates, Plugins, Multilanguage inkl. Herangehensweise, Security, SEO, Barrierfreiheit, Suche...
-                            Theming, Import und Export (RSS), Link-Management
-                        </p>
                     </section>
 
                     <section>
@@ -1005,7 +1128,144 @@ page.10.wrap = <h2>|</h2>
 
                     <section>
                         <h2>Systemarchitektur</h2>
-                        <p>Hier kommt ne fancy Grafik...</p>
+                        <p>
+                            <img src="images/cms-architecture.png" />
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>Datenbank</h2>
+                        <p>SQL, NoSQL, Speicherung von Daten</p>
+                    </section>
+
+                    <section>
+                        <h2>CMS - Core</h2>
+                        <p>Kombinieren von Daten und Layout</p>
+                    </section>
+
+                    <section>
+                        <h2>Artikel</h2>
+                        <p></p>
+                    </section>
+
+                    <section>
+                        <h2>News</h2>
+                        <p></p>
+                    </section>
+
+                    <section>
+                        <h2>Menüs</h2>
+                        <p></p>
+                    </section>
+
+                    <section>
+                        <h2>Assets</h2>
+                        <p></p>
+                    </section>
+
+                    <section>
+                        <h2>User => Rechte und Rollen</h2>
+                        <p></p>
+                    </section>
+
+                    <section>
+                        <h2>Admin-Schnittstelle</h2>
+                        <p></p>
+                    </section>
+
+                    <section>
+                        <h2>Frontend</h2>
+                        <p></p>
+                    </section>
+
+                    <section>
+                        <h2>Staging-Umgebung / Preview</h2>
+                        <p></p>
+                    </section>
+
+                    <section>
+                        <h2>Frontend-Editing</h2>
+                        <p></p>
+                    </section>
+
+                    <section>
+                        <h2>Workflows</h2>
+                        <p></p>
+                    </section>
+
+                    <section>
+                        <h2>Statistiken</h2>
+                        <p></p>
+                    </section>
+
+                    <section>
+                        <h2>Metainformationen (eröffentlichungsdatum, Autor, Inhaltsverzeichnis,)</h2>
+                        <p></p>
+                    </section>
+
+                    <section>
+                        <h2>Link-Management</h2>
+                        <p>Interne Verlinkung</p>
+                    </section>
+
+                    <section>
+                        <h2>Templates</h2>
+                        <p>Themes, Widgets, Layouts, Partials, Pages, ...</p>
+                    </section>
+
+                    <section>
+                        <h2>Plugins / Extensions</h2>
+                        <p></p>
+                    </section>
+
+                    <section>
+                        <h2>Multilanguage inkl. Herangehensweise</h2>
+                        <p></p>
+                    </section>
+
+                    <section>
+                        <h2>Security</h2>
+                        <p></p>
+                    </section>
+
+                    <section>
+                        <h2>SEO</h2>
+                        <p></p>
+                    </section>
+
+                    <section>
+                        <h2>Barriefreiheit</h2>
+                        <p></p>
+                    </section>
+
+                    <section>
+                        <h2>Suche</h2>
+                        <p></p>
+                    </section>
+
+                    <section>
+                        <h2>Import</h2>
+                        <p></p>
+                    </section>
+
+                    <section>
+                        <h2>Export (RSS), Druckversion, PDF, Geodata</h2>
+                        <p>RSS, andere Blogs</p>
+                    </section>
+
+                    <section>
+                        <h2>Druckversion</h2>
+                        <p></p>
+                    </section>
+
+                    <section>
+                        <h2>PDF</h2>
+                        <p></p>
+                    </section>
+
+                    <section>
+                        <h2>Geodata</h2>
+                        <p></p>
                     </section>
                 </section>
 
