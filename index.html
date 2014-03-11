@@ -202,6 +202,16 @@
                     </section>
 
                     <section>
+                        <h2>Grundlegendes</h2>
+                        <p>
+                            Klassisch in einer PHP-Applikation repäsentiert eine PHP-Datei eine Html-Seite
+                        </p>
+                        <p>
+                            Mit Template-Engines erfolgt eine Trennung in eine Datei, die die PHP Logik enthält und ein Template, welches das Html + Template-Code enthält.
+                        </p>
+                    </section>
+
+                    <section>
                         <h2>Warum Templates?</h2>
                         <div class="fragment">
                             <ul>
@@ -343,10 +353,21 @@
 
                     <section>
                         <h2>Voraussetzungen</h2>
+                        <p>Smarty benötigt einen Webserver mit PHP >=4.0.6. bzw. 5.2.0 (Smarty 3.x)</p>
                     </section>
 
                     <section>
                         <h2>Installation</h2>
+                        <p>
+                            <a href="http://www.smarty.net/download">Download und entzippen nach libs</a>
+                        </p>
+                        <pre><code class="php">
+&lt;?php
+require('libs/Smarty.class.php');
+$smarty = new Smarty();
+$smarty->display('cv.tpl.html');
+?&gt;
+                        </code></pre>
                     </section>
 
                     <section>
@@ -355,34 +376,255 @@
 
                     <section>
                         <h2>Kommentare</h2>
+                        <p>
+                            Kommentare werden von Asterisks umschlossen, und mit Trennzeichen umgeben. Beispiel: {* das ist ein Kommentar *}
+                            Smarty-Kommentare werden in der Ausgabe nicht dargestellt und vor allem dazu verwendet, die Templates verständlicher aufzubauen.
+                            Smarty Kommentare werden sind in der engültigen Ausgabe NICHT dargestellt. (im Gegensatz zu &lt;!-- HTML Kommentaren --&gt;).
+                            Sie sind nützlich um in den Templates interne Anmerkungen zu hinterlassen.
+                        </p>
+                        <pre><code class="php">
+&lt;body&gt;
+{* Dies ist ein einzeiliger Kommentar *}
+
+{* dies ist ein mehrzeiliger
+Kommentar, der nicht zum
+Browser gesandt wird.
+*}
+&lt;/body&gt;
+                        </code></pre>
                     </section>
 
                     <section>
                         <h2>Variablen</h2>
+                        <p>
+                            Templatevariablennamen beginnen mit einem $dollar-Zeichen. Sie können Ziffer, Buchstaben und Unterstriche ('_') enthalten,
+                            sehr ähnlich den Variablen in PHP. Numerische Arrayindizes können referenziert werden und auch Nichtnumerische.
+                            Zugriff auf Objekteigenschaften und -methoden ist auch möglich.
+                        </p>
+                        <pre><code class="php">
+{$foo}        <-- Zeigt einfache Variable an (kein Array oder Objekt)
+{$foo[4]}     <-- Zeigt 5. Element von einem Array an, deren Schlussel bei 0 beginnen
+{$foo.bar}    <-- Zeigt das Element zum Schlüssel "bar" des Arrays an (wie PHPs $foo['bar'])
+{$foo.$bar}   <-- Zeigt das Element eines variablen Schlüssels an (wie PHPs $foo[$bar])
+{$foo->bar}   <-- Zeigt eine Eigenschaft "bar" des Objekts $foo an
+{$foo->bar()} <-- Zeigt den Rückgabewert der Objectmethode "bar" an
+                        </code></pre>
+                    </section>
+
+                    <section>
+                        <h2>Variablenzuweisung</h2>
+                        <pre><code class="php">
+&lt;?php
+require('libs/Smarty.class.php');
+$smarty = new Smarty();
+
+$smarty->assign('name', 'george smith');
+$smarty->assign('address', '45th & Harris');
+
+$smarty->display('cv.tpl.html');
+?&gt;
+                        </code></pre>
                     </section>
 
                     <section>
                         <h2>Funktionen</h2>
+                        <p>
+                            Jedes Smarty-Tag gibt entweder eine Variable aus oder ruft eine Funktion auf.
+                            Funktionen werden aufgerufen indem der Funktionsname und die Parameter mit Trennzeichen umschlossen werden.
+                            Beispiel: {funcname attr1="val" attr2="val"}.
+                        </p>
+                         <pre><code class="php">
+{mySimpleFunction}
+{html_select_date display_days=true param2="hallo welt"}
+                         </code></pre>
                     </section>
 
                     <section>
                         <h2>Modifikatoren</h2>
+                        <p>
+                            Variablen-Modifikatoren können auf alle Variablen angewendet werden, um deren Inhalt zu verändern.
+                            Dazu hängen sie einfach ein | (Pipe-Zeichen) und den Modifikatornamen an die entsprechende Variable an.
+                            Ein Modifikator über Parameter in seiner Arbeitsweise beinflusst werden. Diese Parameter werden dem Modifikatorname angehängt und mit : getrennt.
+                        </p>
+                        <pre><code class="php">
+{* Modifikator auf eine Variable anwenden *}
+{$titel|upper}
+{* Modifikator mit Parametern *}
+{$title|truncate:40:"..."}
+
+{* Modifikator auf Funktionsparameter anwenden *}
+{html_table loop=$myvar|upper}
+{* mit Parametern *}
+{html_table loop=$myvar|truncate:40:"..."}
+
+{* formatierung einer Zeichenkette *}
+{"foobar"|upper}
+
+{* mit date_format das aktuelle Datum formatieren *}
+{"now"|date_format:"%Y/%m/%d"}
+                        </code></pre>
                     </section>
 
                     <section>
                         <h2>If / else</h2>
+                        <p>
+                            {if}-Statements in Smarty erlauben die selbe Flexibilität wie in PHP, bis auf ein paar Erweiterungen für die Template-Engine.
+                            Jedes {if} muss mit einem {/if} kombiniert sein. {else} und {elseif} sind ebenfalls erlaubt.
+                            Alle PHP Vergleichsoperatoren und Funktionen, wie ||, or, &&, and, is_array(), etc. sind erlaubt.
+                        </p>
+                        <pre><code class="php">
+{if $name == "Fred"}    {* ein Beispiel mit == und 'eq' (gleich) *}
+    Willkommen der Herr.
+{elseif $name eq "Wilma"}
+    Willkommen die Dame.
+{else}
+    Willkommen, was auch immer Du sein magst.
+{/if}
+
+{if ( $anzahl < 0 or $anzahl > 1000 ) and $menge >= #minMengeAmt#} {* Klammern sind erlaubt *}
+    ...
+{/if}
+
+{if count($var) gt 0} {* einbetten von php Funktionsaufrufen ('gt' steht für 'grösser als') *}
+    ...
+{/if}
+                        </code></pre>
                     </section>
 
                     <section>
-                        <h2>Iteration</h2>
+                        <h2>Iteration - Section</h2>
+                        <p>
+                            Template-{sections} werden verwendet, um durch Arrays zu iterieren (ähnlich wie {foreach}).
+                            Jedes section-Tag muss mit einem /section-Tag kombiniert werden. name und loop sind erforderliche Parameter.
+                            Der Name der 'section' kann frei gewählt werden, muss jedoch aus Buchstaben, Zahlen oder Unterstrichen bestehen. {sections} können verschachtelt werden
+                        </p>
+                        <pre><code class="php">
+&lt;?php
+$data = array(1000,1001,1002);
+$smarty-&gt;assign('custid',$data);
+?&gt;
+                        </code></pre>
+                        <pre><code class="php">
+{* dieses Beispiel gibt alle Werte des $KundenId Arrays aus *}
+{section name=kunde loop=$custid}
+    id: {$KundenId[kunde]}<br />
+{/section}
+{* alle Werte in umgekehrter Reihenfolge ausgeben: *}
+{section name=kunde loop=$custid step=-1}
+    id: {$KundenId[kunde]}<br />
+{/section}
+                        </code></pre>
+                    </section>
+
+                    <section>
+                        <h2>Iteration - Foreach</h2>
+                        <p>
+                            Die foreach Schleife ist eine Alternative zu section. foreach wird verwendet, um ein assoziatives Array zu durchlaufen.
+                            Die Syntax von foreach-Schleifen ist viel einfacher als die von section. {foreach} Tags müssen mit {/foreach} tags kombiniert werden.
+                            Erforderliche Parameter sind: from und item.
+                        </p>
+                        <pre><code class="php">
+&lt;?php
+$data = array(1000,1001,1002);
+$smarty-&gt;assign('custid',$data);
+?&gt;
+                        </code></pre>
+                        <pre><code class="php">
+{* dieses Beispiel gibt alle Werte aus dem $KundenId Array aus *}
+{foreach from=$custid item=aktuelle_id}
+    id: {$aktuelle_id}<br>
+{/foreach}
+                        </code></pre>
+                    </section>
+
+                    <section>
+                        <h2>Iteration - Foreach</h2>
+                        <p>
+                            Foreach-Loops haben auch eigene Variablen welche die Foreach Eigenschaften enthalten.
+                            Diese werden wie folgt ausgewiesen: {$smarty.foreach.foreachname.varname}.
+                            foreachname ist der Name der als name Attribut von Foreach übergeben wurden.
+                        </p>
+                        <p><strong>iteration: </strong> gibt die aktuelle iteration aus, beginnend bei 1</p>
+                        <p><strong>first</strong> ist TRUE wenn die aktuelle Iteration die erste ist</p>
+                        <p><strong>last</strong> ist TRUE wenn die aktuelle Iteration die letzte ist</p>
+                        <p><strong>total</strong> gibt die Anzahl Iterationen des Foreach Loops aus und kann in- oder nach- Foreach Blöcken verwendet werden.</p>
+                        </p>
                     </section>
 
                     <section>
                         <h2>Include</h2>
+                        <p>
+                            {include}-Tags werden verwendet, um andere Templates in das aktuelle Template einzubinden.
+                            Alle Variablen des aktuellen Templates sind auch im eingebundenen Template verfügbar.
+                            Das {include}-Tag muss ein 'file' Attribut mit dem Pfad zum einzubindenden Template enthalten.
+                        </p>
+                        <pre><code class="html">
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;{$title}&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    {include file='page_header.tpl'}
+
+    {* hier kommt der body des Templates *}
+    {include file=&quot;$tpl_name.tpl&quot;} &lt;-- $tpl_name wird durch eine Wert ersetzt
+
+    {include file='page_footer.tpl'}
+&lt;/body&gt;
+&lt;/html&gt;
+                        </code></pre>
                     </section>
 
                     <section>
                         <h2>Beispiel</h2>
+                        <pre><code class="php">
+&lt;?php
+include('Smarty.class.php');
+
+$smarty = new Smarty;
+$smarty->assign('name', 'george smith');
+$smarty->assign('address', '45th & Harris');
+
+$smarty->display('index.tpl');
+?&gt;
+                        </code></pre>
+                        <pre><code class="html">
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Info&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;pre&gt;
+    User Information:
+
+    Name: {$name}
+    Address: {$address}
+    &lt;/pre&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+                        </code></pre>
+                    </section>
+
+                    <section>
+                        <pre><code class="html">
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Info&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;pre&gt;
+    User Information:
+
+    Name: george smith
+    Address: 45th & Harris
+    &lt;/pre&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+                        </code></pre>
                     </section>
 
                     <section>
