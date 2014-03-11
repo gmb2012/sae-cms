@@ -58,66 +58,44 @@
     <!-- Basedata -->
     <div class="row">
         <div class="col-md-11 col-md-offset-1">
-            <h2><?php echo $baseData->title; ?></h2>
+            <h2>{$baseData->title}</h2>
 
-            <?php
-                foreach($baseData->content as $currentProperty) {
-            ?>
-
+            {foreach from=$baseData->content item=currentProperty}
             <div class="row">
-                <div class="col-md-3 text-right"><?php echo $currentProperty->title; ?></div>
-                <div class="col-md-9"><?php echo $currentProperty->data; ?></div>
+                <div class="col-md-3 text-right">{$currentProperty->title}</div>
+                <div class="col-md-9">{$currentProperty->data}</div>
             </div>
-
-            <?php
-                }
-                ?>
-
+            {/foreach}
 
         </div>
     </div>
 
-    <?php
-        foreach($cv as $currentTopic) {
-            ?>
-
+    {foreach from=$cv item=currentTopic}
     <div class="row">
         <div class="col-md-11 col-md-offset-1">
-            <h2><?php echo $currentTopic->title; ?></h2>
+            <h2>{$currentTopic->title}</h2>
 
-            <?php
-                    foreach($currentTopic->content as $currentProperty) {
-            ?>
-
+            {foreach from=$currentTopic->content item=currentProperty}
             <div class="row">
                 <div class="col-md-3 text-right">
-                    <?php
-                                if($currentProperty->to === null) {
-                    echo "seit " . $currentProperty->from;
-                    } else if($currentProperty->to === $currentProperty->from) {
-                    echo $currentProperty->from;
-                    } else {
-                    echo $currentProperty->from . " - " . $currentProperty->to;
-                    }
-                    ?>
+                    {if $currentProperty->to === null}
+                        seit {$currentProperty->from}
+                    {elseif $currentProperty->to === $currentProperty->from}
+                        {$currentProperty->from}
+                    {else}
+                        {$currentProperty->from} - {$currentProperty->to}
+                    {/if}
                 </div>
                 <div class="col-md-9">
-                    <h4><?php echo $currentProperty->title; ?></h4>
-                    <p><?php echo join("<br />", $currentProperty->description); ?></p>
+                    <h4>{$currentProperty->title}</h4>
+                    <p>{$currentProperty->description|@join:"<br />"}</p>
                 </div>
             </div>
-
-            <?php
-                    }
-                    ?>
-
+            {/foreach}
 
         </div>
     </div>
-
-    <?php
-        }
-        ?>
+    {/foreach}
 
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

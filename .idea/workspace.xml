@@ -2,142 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4d224ca-f7c2-48d3-88b1-2856cdc3e237" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/Smarty.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/SmartyBC.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/block.textformat.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/css/bootstrap-theme.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/css/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/css/bootstrap.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/css/custom.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/cv.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/cv.tpl.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/debug.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/function.counter.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/function.cycle.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/function.fetch.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/function.html_checkboxes.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/function.html_image.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/function.html_options.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/function.html_radios.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/function.html_select_date.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/function.html_select_time.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/function.html_table.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/function.mailto.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/function.math.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/modifier.capitalize.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/modifier.date_format.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/modifier.debug_print_var.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/modifier.escape.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/modifier.regex_replace.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/modifier.replace.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/modifier.spacify.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/modifier.truncate.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/modifiercompiler.cat.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/modifiercompiler.count_characters.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/modifiercompiler.count_paragraphs.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/modifiercompiler.count_sentences.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/modifiercompiler.count_words.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/modifiercompiler.default.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/modifiercompiler.escape.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/modifiercompiler.from_charset.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/modifiercompiler.indent.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/modifiercompiler.lower.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/modifiercompiler.noprint.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/modifiercompiler.string_format.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/modifiercompiler.strip.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/modifiercompiler.strip_tags.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/modifiercompiler.to_charset.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/modifiercompiler.unescape.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/modifiercompiler.upper.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/modifiercompiler.wordwrap.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/outputfilter.trimwhitespace.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/shared.escape_special_chars.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/shared.literal_compiler_param.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/shared.make_timestamp.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/shared.mb_str_replace.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/shared.mb_unicode.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/shared.mb_wordwrap.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_cacheresource.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_cacheresource_custom.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_cacheresource_keyvaluestore.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_config_source.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_cacheresource_file.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_compile_append.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_compile_assign.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_compile_block.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_compile_break.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_compile_call.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_compile_capture.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_compile_config_load.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_compile_continue.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_compile_debug.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_compile_eval.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_compile_extends.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_compile_for.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_compile_foreach.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_compile_function.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_compile_if.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_compile_include.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_compile_include_php.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_compile_insert.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_compile_ldelim.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_compile_nocache.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_compile_private_block_plugin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_compile_private_function_plugin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_compile_private_modifier.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_compile_private_object_block_function.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_compile_private_object_function.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_compile_private_print_expression.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_compile_private_registered_block.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_compile_private_registered_function.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_compile_private_special_variable.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_compile_rdelim.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_compile_section.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_compile_setfilter.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_compile_while.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_compilebase.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_config_file_compiler.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_configfilelexer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_configfileparser.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_data.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_debug.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_filter_handler.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_function_call_handler.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_get_include_path.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_nocache_insert.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_parsetree.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_resource_eval.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_resource_extends.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_resource_file.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_resource_php.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_resource_registered.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_resource_stream.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_resource_string.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_smartytemplatecompiler.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_templatebase.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_templatecompilerbase.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_templatelexer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_templateparser.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_utility.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_internal_write_file.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_resource.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_resource_custom.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_resource_recompiled.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_resource_uncompiled.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/sysplugins/smarty_security.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/libs/plugins/variablefilter.htmlspecialchars.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/excercises/01_cv_php/cv.php" afterPath="$PROJECT_DIR$/excercises/01_cv_php/cv.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/excercises/02_cv_smarty/cv.php" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/cv.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/excercises/02_cv_smarty/cv.tpl.html" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/cv.tpl.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -162,19 +28,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="560" column="46" selection-start="28331" selection-end="28331" vertical-scroll-proportion="-0.9889163" vertical-offset="10323" max-vertical-offset="16558">
+            <state line="479" column="25" selection-start="24388" selection-end="24413" vertical-scroll-proportion="-12.269231" vertical-offset="7824" max-vertical-offset="16830">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cv.tpl.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="cv.tpl.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/excercises/02_cv_smarty/cv.tpl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="127" column="7" selection-start="4228" selection-end="4228" vertical-scroll-proportion="-83.03846" vertical-offset="0" max-vertical-offset="2261">
+            <state line="78" column="0" selection-start="2841" selection-end="2841" vertical-scroll-proportion="0.40121213" vertical-offset="995" max-vertical-offset="1887">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cv.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/excercises/01_cv_php/cv.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="323" column="17" selection-start="13479" selection-end="13479" vertical-scroll-proportion="-41.384617" vertical-offset="4415" max-vertical-offset="5661">
               <folding />
             </state>
           </provider>
@@ -183,7 +58,7 @@
       <file leaf-file-name="cv.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/excercises/02_cv_smarty/cv.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="201" column="2" selection-start="9015" selection-end="9015" vertical-scroll-proportion="-27.307692" vertical-offset="2707" max-vertical-offset="3519">
+            <state line="204" column="19" selection-start="9097" selection-end="9097" vertical-scroll-proportion="-27.961538" vertical-offset="2741" max-vertical-offset="3604">
               <folding />
             </state>
           </provider>
@@ -204,9 +79,9 @@
       <list>
         <option value="$PROJECT_DIR$/excercises/01_cv_php/css/custom.css" />
         <option value="$PROJECT_DIR$/excercises/01_cv_php/cv.php" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/excercises/02_cv_smarty/cv.php" />
         <option value="$PROJECT_DIR$/excercises/02_cv_smarty/cv.tpl.html" />
-        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -430,7 +305,11 @@
       <created>1394532378480</created>
       <updated>1394532378480</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="smarty part done">
+      <created>1394537262242</created>
+      <updated>1394537262242</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -477,7 +356,8 @@
     <MESSAGE value="some stuff" />
     <MESSAGE value="more content" />
     <MESSAGE value="php excercise" />
-    <option name="LAST_COMMIT_MESSAGE" value="php excercise" />
+    <MESSAGE value="smarty part done" />
+    <option name="LAST_COMMIT_MESSAGE" value="smarty part done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -516,21 +396,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/excercises/01_cv_php/cv.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="323" column="17" selection-start="13479" selection-end="13479" vertical-scroll-proportion="0.7906404" vertical-offset="4849" max-vertical-offset="5661">
-          <folding>
-            <marker date="1394532414198" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1394532414198" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1394532414198" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1394532414198" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1394532414198" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1394532414198" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1394532414198" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/excercises/02_cv_smarty/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
@@ -545,23 +410,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/excercises/02_cv_smarty/cv.tpl.html">
+    <entry file="file://$PROJECT_DIR$/excercises/02_cv_smarty/cv.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="127" column="7" selection-start="4228" selection-end="4228" vertical-scroll-proportion="-83.03846" vertical-offset="0" max-vertical-offset="2261">
+        <state line="204" column="19" selection-start="9097" selection-end="9097" vertical-scroll-proportion="-27.961538" vertical-offset="2741" max-vertical-offset="3604">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/excercises/02_cv_smarty/cv.php">
+    <entry file="file://$PROJECT_DIR$/excercises/01_cv_php/cv.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="201" column="2" selection-start="9015" selection-end="9015" vertical-scroll-proportion="-27.307692" vertical-offset="2707" max-vertical-offset="3519">
+        <state line="323" column="17" selection-start="13479" selection-end="13479" vertical-scroll-proportion="-41.384617" vertical-offset="4415" max-vertical-offset="5661">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="560" column="46" selection-start="28331" selection-end="28331" vertical-scroll-proportion="-0.9889163" vertical-offset="10323" max-vertical-offset="16558">
+        <state line="479" column="25" selection-start="24388" selection-end="24413" vertical-scroll-proportion="-12.269231" vertical-offset="7824" max-vertical-offset="16830">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/excercises/02_cv_smarty/cv.tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="0" selection-start="2841" selection-end="2841" vertical-scroll-proportion="0.40121213" vertical-offset="995" max-vertical-offset="1887">
           <folding />
         </state>
       </provider>

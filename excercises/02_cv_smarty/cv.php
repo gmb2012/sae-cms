@@ -199,4 +199,9 @@ $subitem->description   = ["u.a. als Leiter einer Jugendgruppe, stellv. Leiter d
 $item->content[]        = $subitem;
 
 $cv[] = $item;
+
+$smarty = new Smarty();
+$smarty->assign('baseData', $baseData);
+$smarty->assign('cv', $cv);
+$smarty->display('cv.tpl.html');
 ?>
