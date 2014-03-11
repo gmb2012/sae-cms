@@ -3,17 +3,20 @@ require_once('libs/Smarty.class.php');
 
 // base data
 $baseData = new stdClass();
-$baseData->title = 'Persönliche Angaben';
-$baseData->content                      = new stdClass();
-$baseData->content->dateOfBirth         = new stdClass();
-$baseData->content->dateOfBirth->title  = "Geburtsdatum";
-$baseData->content->dateOfBirth->data   = date("d.m.Y", mktime(0, 0, 0, 6, 14, 1979));
-$baseData->content->placeOfBirth        = new stdClass();
-$baseData->content->placeOfBirth->title = "Geburtsort";
-$baseData->content->placeOfBirth->data  = "Langen / Hessen";
-$baseData->content->familyStatus        = new stdClass();
-$baseData->content->familyStatus->title = "Familienstand";
-$baseData->content->familyStatus->data  = "unverheiratet";
+$baseData->title        = 'Persönliche Angaben';
+$baseData->content      = [];
+$item                   = new stdClass();
+$item->title            = "Geburtsdatum";
+$item->data             = date("d.m.Y", mktime(0, 0, 0, 6, 14, 1979));
+$baseData->content[]    = $item;
+$item                   = new stdClass();
+$item->title            = "Geburtsort";
+$item->data             = "Langen / Hessen";
+$baseData->content[]    = $item;
+$item                   = new stdClass();
+$item->title            = "Familienstand";
+$item->data             = "unverheiratet";
+$baseData->content[]    = $item;
 
 // rest the data
 $cv = [];

@@ -2,8 +2,188 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4d224ca-f7c2-48d3-88b1-2856cdc3e237" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Binary/Add.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Binary/And.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Loader/Array.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Array.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/AssignName.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/AutoEscape.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/TokenParser/AutoEscape.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Autoloader.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Binary.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Binary/BitwiseAnd.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Binary/BitwiseOr.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Binary/BitwiseXor.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Block.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/TokenParser/Block.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/BlockReference.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/BlockReference.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Body.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Call.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Loader/Chain.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Compiler.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/CompilerInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Binary/Concat.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Conditional.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Constant.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Test/Constant.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Extension/Core.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Extension/Debug.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Filter/Default.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Test/Defined.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Binary/Div.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Test/Divisibleby.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Do.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/TokenParser/Do.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Embed.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/TokenParser/Embed.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Binary/EndsWith.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Environment.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Binary/Equal.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Error.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Extension/Escaper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/NodeVisitor/Escaper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Test/Even.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/ExistsLoaderInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/ExpressionParser.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/TokenParser/Extends.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Extension.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/ExtensionInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/ExtensionReference.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Loader/Filesystem.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Filter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Filter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/TokenParser/Filter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/FilterCallableInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/FilterInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Binary/FloorDiv.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Flush.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/TokenParser/Flush.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/For.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/TokenParser/For.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/ForLoop.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/TokenParser/From.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Filter/Function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Function/Function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Test/Function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/FunctionCallableInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/FunctionInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/GetAttr.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Binary/Greater.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Binary/GreaterEqual.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/If.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/TokenParser/If.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Import.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/TokenParser/Import.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Binary/In.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Include.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/TokenParser/Include.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Test/IntegrationTestCase.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Binary/Less.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Binary/LessEqual.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Lexer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/LexerInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Error/Loader.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/LoaderInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Macro.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/TokenParser/Macro.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Markup.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Binary/Matches.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Filter/Method.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Function/Method.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Test/Method.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/MethodCall.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Binary/Mod.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Module.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Binary/Mul.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Name.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Unary/Neg.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Filter/Node.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Function/Node.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Test/Node.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/NodeInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/NodeOutputInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Test/NodeTestCase.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/NodeTraverser.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/NodeVisitorInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Unary/Not.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Binary/NotEqual.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Binary/NotIn.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Test/Null.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Test/Odd.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Extension/Optimizer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/NodeVisitor/Optimizer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Binary/Or.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Parent.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Parser.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/ParserInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Unary/Pos.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Binary/Power.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Print.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Binary/Range.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Error/Runtime.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/NodeVisitor/SafeAnalysis.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Test/Sameas.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Extension/Sandbox.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Sandbox.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/NodeVisitor/Sandbox.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/TokenParser/Sandbox.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/SandboxedModule.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/SandboxedPrint.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Sandbox/SecurityError.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Sandbox/SecurityPolicy.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Sandbox/SecurityPolicyInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Set.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/TokenParser/Set.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/SetTemp.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/SimpleFilter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/SimpleFunction.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/SimpleTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Spaceless.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/TokenParser/Spaceless.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Extension/Staging.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Binary/StartsWith.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Loader/String.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Extension/StringLoader.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Binary/Sub.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Error/Syntax.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/TempName.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Template.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/TemplateInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Test.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Test.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/TestCallableInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/TestInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Text.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Token.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/TokenParser.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/TokenParserBroker.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/TokenParserBrokerInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/TokenParserInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/TokenStream.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Expression/Unary.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/TokenParser/Use.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/css/bootstrap-theme.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/css/bootstrap-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/css/bootstrap-theme.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/css/bootstrap.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/css/custom.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/cv.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/cv.tpl.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/excercises/03_cv_twig/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/excercises/01_cv_php/cv.php" afterPath="$PROJECT_DIR$/excercises/01_cv_php/cv.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/excercises/02_cv_smarty/cv.php" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/cv.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/excercises/02_cv_smarty/cv.tpl.html" afterPath="$PROJECT_DIR$/excercises/02_cv_smarty/cv.tpl.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -28,37 +208,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="479" column="25" selection-start="24388" selection-end="24413" vertical-scroll-proportion="-12.269231" vertical-offset="7824" max-vertical-offset="16830">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cv.tpl.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/excercises/02_cv_smarty/cv.tpl.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="0" selection-start="2841" selection-end="2841" vertical-scroll-proportion="0.40121213" vertical-offset="995" max-vertical-offset="1887">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cv.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/excercises/01_cv_php/cv.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="323" column="17" selection-start="13479" selection-end="13479" vertical-scroll-proportion="-41.384617" vertical-offset="4415" max-vertical-offset="5661">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cv.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/excercises/02_cv_smarty/cv.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="204" column="19" selection-start="9097" selection-end="9097" vertical-scroll-proportion="-27.961538" vertical-offset="2741" max-vertical-offset="3604">
+            <state line="825" column="0" selection-start="36469" selection-end="36469" vertical-scroll-proportion="0.6736453" vertical-offset="13478" max-vertical-offset="19924">
               <folding />
             </state>
           </provider>
@@ -78,10 +231,12 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/excercises/01_cv_php/css/custom.css" />
-        <option value="$PROJECT_DIR$/excercises/01_cv_php/cv.php" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/excercises/02_cv_smarty/cv.php" />
         <option value="$PROJECT_DIR$/excercises/02_cv_smarty/cv.tpl.html" />
+        <option value="$PROJECT_DIR$/excercises/03_cv_twig/cv.php" />
+        <option value="$PROJECT_DIR$/excercises/02_cv_smarty/cv.php" />
+        <option value="$PROJECT_DIR$/excercises/01_cv_php/cv.php" />
+        <option value="$PROJECT_DIR$/excercises/03_cv_twig/cv.tpl.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -164,7 +319,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="02_cv_smarty" />
+              <option name="myItemId" value="03_cv_twig" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -183,10 +338,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="02_cv_smarty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -225,6 +376,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\business\SAE\sae-cms\excercises\03_cv_twig" />
+      <recent name="D:\business\SAE\sae-cms\excercises" />
       <recent name="D:\business\SAE\sae-cms\excercises\02_cv_smarty" />
       <recent name="D:\business\SAE\sae-cms\excercises\01_cv_php" />
     </key>
@@ -309,7 +462,11 @@
       <created>1394537262242</created>
       <updated>1394537262242</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="smarty excercise done">
+      <created>1394543623384</created>
+      <updated>1394543623384</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -357,7 +514,8 @@
     <MESSAGE value="more content" />
     <MESSAGE value="php excercise" />
     <MESSAGE value="smarty part done" />
-    <option name="LAST_COMMIT_MESSAGE" value="smarty part done" />
+    <MESSAGE value="smarty excercise done" />
+    <option name="LAST_COMMIT_MESSAGE" value="smarty excercise done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -410,23 +568,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/excercises/02_cv_smarty/cv.php">
+    <entry file="file://$PROJECT_DIR$/excercises/03_cv_twig/js/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="204" column="19" selection-start="9097" selection-end="9097" vertical-scroll-proportion="-27.961538" vertical-offset="2741" max-vertical-offset="3604">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/excercises/01_cv_php/cv.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="323" column="17" selection-start="13479" selection-end="13479" vertical-scroll-proportion="-41.384617" vertical-offset="4415" max-vertical-offset="5661">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="479" column="25" selection-start="24388" selection-end="24413" vertical-scroll-proportion="-12.269231" vertical-offset="7824" max-vertical-offset="16830">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="33201">
           <folding />
         </state>
       </provider>
@@ -434,6 +578,55 @@
     <entry file="file://$PROJECT_DIR$/excercises/02_cv_smarty/cv.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="78" column="0" selection-start="2841" selection-end="2841" vertical-scroll-proportion="0.40121213" vertical-offset="995" max-vertical-offset="1887">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Node/Do.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="851">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/excercises/03_cv_twig/lib/Twig/Autoloader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="851">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/excercises/01_cv_php/cv.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="32" selection-start="634" selection-end="634" vertical-scroll-proportion="0.33497536" vertical-offset="0" max-vertical-offset="5712">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/excercises/03_cv_twig/cv.tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="70" selection-start="3474" selection-end="3474" vertical-scroll-proportion="1.4327272" vertical-offset="348" max-vertical-offset="1887">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/excercises/02_cv_smarty/cv.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="32" selection-start="674" selection-end="674" vertical-scroll-proportion="0.3768473" vertical-offset="0" max-vertical-offset="3655">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/excercises/03_cv_twig/cv.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="89" selection-end="704" vertical-scroll-proportion="0.1046798" vertical-offset="0" max-vertical-offset="3672">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="825" column="0" selection-start="36469" selection-end="36469" vertical-scroll-proportion="0.6736453" vertical-offset="13478" max-vertical-offset="19924">
           <folding />
         </state>
       </provider>

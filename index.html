@@ -636,7 +636,163 @@ $smarty->display('index.tpl');
 
                     <section>
                         <h2>Twig</h2>
-                        <p>Bla bla</p>
+                        <p>Twig ist eine  moderne Template Engine von den Machern des Symfony Frameworks und daher auch Teil dieses</p>
+                    </section>
+
+                    <section>
+                        <h2>Handbuch</h2>
+                        <p>
+                            <a href="http://twig.sensiolabs.org/documentation">http://twig.sensiolabs.org/documentation</a>
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>Voraussetzungen</h2>
+                        <p>Smarty benötigt einen Webserver mit PHP 5.2.4</p>
+                    </section>
+
+                    <section>
+                        <h2>Installation</h2>
+                        <p>
+                            <a href="https://github.com/fabpot/Twig/tags">Download und entzippen nach lib/Twig</a>
+                        </p>
+                        <pre><code class="php">
+&lt;?php
+require_once 'lib/Twig/Autoloader.php';
+Twig_Autoloader::register();
+$loader = new Twig_Loader_Filesystem('.');
+$twig = new Twig_Environment($loader, array());
+
+echo $twig->render('index.tpl.html', array('bla' => 'blubb'));
+?&gt;
+                        </code></pre>
+                    </section>
+
+                    <section>
+                        <h2>Kommentare</h2>
+                        <pre><code class="php">
+{# note: disabled template because we no longer use this
+    {% for user in users %}
+        ...
+    {% endfor %}
+#}
+                        </code></pre>
+                    </section>
+
+                    <section>
+                        <h2>Variablen</h2>
+                        <pre><code class="php">
+{{ foo.bar }}
+{{ foo['bar'] }}
+                        </code></pre>
+                    </section>
+
+                    <section>
+                        <h2>Variablen zuweisen</h2>
+                        <pre><code class="php">
+{% set foo = 'foo' %}
+{% set foo = [1, 2] %}
+{% set foo = {'foo': 'bar'} %}
+                        </code></pre>
+                        <pre><code class="php">
+echo $twig->render('index.tpl.html', array('bla' => 'blubb', 'blubb' => 'bla'));
+                        </code></pre>
+                    </section>
+
+                    <section>
+                        <h2>Filter</h2>
+                        <pre><code class="php">
+{{ name|striptags|upper }}
+{{ list|join(', ') }}
+                        </code></pre>
+                    </section>
+
+                    <section>
+                        <h2>Funktionen</h2>
+                        <pre><code class="php">
+{{ date() }}
+{% for i in range(0, 3) %}
+    {{ i }},
+{% endfor %}
+                        </code></pre>
+                    </section>
+
+                    <section>
+                        <h2>If / else</h2>
+                        <pre><code class="php">
+{% if kenny.sick %}
+    Kenny is sick.
+{% elseif kenny.dead %}
+    You killed Kenny! You bastard!!!
+{% else %}
+    Kenny looks okay --- so far
+{% endif %}
+                        </code></pre>
+                    </section>
+
+                    <section>
+                        <h2>Iteration</h2>
+                        <pre><code class="html">
+&lt;h1&gt;Members&lt;/h1&gt;
+&lt;ul&gt;
+{% for user in users %}
+    &lt;li&gt;{{ user.username|e }}&lt;/li&gt;
+{% endfor %}
+&lt;/ul&gt;
+                        </code></pre>
+                    </section>
+
+                    <section>
+                        <h2>Include</h2>
+                        <pre><code class="php">
+{% include 'sidebar.html' %}
+
+{% for box in boxes %}
+    {% include "render_box.html" %}
+{% endfor %}
+                        </code></pre>
+                    </section>
+
+                    <section>
+                        <h2>Vererbung</h2>
+                        <pre><code class="php">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    {% block head %}
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; /&gt;
+    &lt;title&gt;{% block title %}{% endblock %} - My Webpage&lt;/title&gt;
+    {% endblock %}
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id=&quot;content&quot;&gt;{% block content %}{% endblock %}&lt;/div&gt;
+    &lt;div id=&quot;footer&quot;&gt;
+    {% block footer %}&copy; Copyright 2011 by &lt;a href=&quot;http://domain.invalid/&quot;&gt;you&lt;/a&gt;.{% endblock %}
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                        </code></pre>
+                    </section>
+
+                    <section>
+                        <h2>Vererbung</h2>
+                        <pre><code class="php">
+{% extends &quot;base.html&quot; %}
+
+{% block title %}Index{% endblock %}
+{% block head %}
+    {{ parent() }}
+    &lt;style type=&quot;text/css&quot;&gt;
+    .important { color: #336699; }
+    &lt;/style&gt;
+{% endblock %}
+{% block content %}
+    &lt;h1&gt;Index&lt;/h1&gt;
+    &lt;p class=&quot;important&quot;&gt;
+        Welcome to my awesome homepage.
+    &lt;/p&gt;
+{% endblock %}
+                        </code></pre>
                     </section>
 
                     <section>
@@ -646,10 +802,35 @@ $smarty->display('index.tpl');
 
                     <section>
                         <h2>Typoscript</h2>
+                        <p>
+                            Die Ausgabe von Inhalten im Frontend wird in erster Linie über die Metasprache TypoScript gesteuert.
+                            Genau genommen ist TypoScript eine Konfigurationssprache:
+                            Was in TypoScript definiert ist, wird in ein systemweites PHP-Array geparst.
+                            Dieses wiederum steuert, welche PHP-Funktionen beim Aufruf der Seite ausgeführt werden.
+                            Damit können Eigenschaften und Erweiterungen mit wenigen Handgriffen global für die gesamte Website verwaltet werden.
+                            TypoScript ist (bezogen auf die Syntax) objektorientiert.
+                        </p>
+                        <pre><code class="php">
+page = PAGE
+page.10 = TEXT
+page.10.value = Hello, world!
+page.10.wrap = <h2>|</h2>
+                        </code></pre>
                     </section>
 
                     <section>
                         <h2>Fluid</h2>
+                        <p>
+                            TypoScript + Extension in Typo3
+                        </p>
+                        <pre><code class="html">
+&lt;div class=&quot;box box-{boxColor}&quot;&gt;
+    &lt;h3&gt;{boxHeader}&lt;/h3&gt;
+    &lt;div class=&quot;contains&quot;&gt;
+        {boxContent}
+    &lt;/div&gt;
+&lt;/div&gt;
+                        </code></pre>
                     </section>
                 </section>
 
@@ -933,6 +1114,7 @@ $smarty->display('index.tpl');
                             <li><a href="http://www.coffeebreak-blog.de/top-5-content-management-systeme/" target="_blank">http://www.coffeebreak-blog.de/top-5-content-management-systeme/</a></li>
                             <li><a href="http://www.opensourcecms.com/">http://www.opensourcecms.com/</a></li>
                             <li><a href="http://blog.maettig.com/2005/06/09/cms" target="_blank">http://blog.maettig.com/2005/06/09/cms</a></li>
+                            <li><a href="http://wiki.typo3.org/T3Doc/Fluidtemplate_by_example">http://wiki.typo3.org/T3Doc/Fluidtemplate_by_example</a></li>
                         </ul>
                     </section>
                 </section>
