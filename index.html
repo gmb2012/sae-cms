@@ -1134,63 +1134,131 @@ page.10.wrap = <h2>|</h2>
                     </section>
 
                     <section>
+                        <h2>Dateisystem</h2>
+                        <ul>
+                            <li>Beinhaltet die Dateien des CMS</li>
+                            <li>Meistens Speicherung von Medieninhalten (Bilder, Videos, ...)</li>
+                        </ul>
+                    </section>
+
+                    <section>
                         <h2>Datenbank</h2>
-                        <p>SQL, NoSQL, Speicherung von Daten</p>
+                        <ul>
+                            <li>Speichert Daten (Artikel, Seiten, Einstellungen, ...)</li>
+                            <li>Speicherung von Metadaten zu Medieninhalten</li>
+                            <li>Sehr oft MySQL</li>
+                            <li>Oft auch andere Datenbanken (SQL & NoSQL)</li>
+                        </ul>
                     </section>
 
                     <section>
                         <h2>CMS - Core</h2>
                         <p>Kombinieren von Daten und Layout</p>
+                        <ul>
+                            <li>Enthält die Kernfunktionalität des CMS</li>
+                            <li>Kombinieren von Daten und Layout</li>
+                            <li>Geschrieben in einer Programmiersprache (z.B. PHP)</li>
+                        </ul>
                     </section>
 
                     <section>
-                        <h2>Artikel</h2>
-                        <p></p>
+                        <h2>Seiten</h2>
+                        <p>
+                            <ul>
+                                <li>Unterteilung in Titel, Text, Teaser, ...</li>
+                                <li>Basis Inhalt eines CMS</li>
+                                <li>Mix aus Text, Links, Bildern, ...</li>
+                                <li>Wiederverwendbarkeit</li>
+                                <li>Speicherung vs. Publikation</li>
+                                <li>Haben Metadaten</li>
+                            </ul>
+                        </p>
                     </section>
 
                     <section>
-                        <h2>News</h2>
-                        <p></p>
+                        <h2>Artikel / News</h2>
+                        <p>
+                            <li>Konnt aus der Welt der Blogs</li>
+                            <li>Eher ein kurzer Text mit Überschrift</li>
+                            <li>Mix aus Text, Links, Bildern, ...</li>
+                            <li>Darstellung meist als Liste</li>
+                            <li>Haben Metadaten</li>
+                        </p>
                     </section>
 
                     <section>
                         <h2>Menüs</h2>
-                        <p></p>
+                        <p>
+                            <ul>
+                                <li>Navigation innerhalb der Webseite</li>
+                                <li>Kann mehrere geben</li>
+                                <li>Meistens beliebig verlinkbar</li>
+                                <li>Personalisierbar</li>
+                            </ul>
+                        </p>
                     </section>
 
                     <section>
                         <h2>Assets</h2>
-                        <p></p>
+                        <p>
+                            <ul>
+                                <li>Dateieien innerhalb eines CMS</li>
+                                <li>Oft via DMS gepflegt</li>
+                                <li>Haben einen Typ</li>
+                                <li>Haben Metadaten</li>
+                                <li>Lassen sich innerhalb von Artikeln benutzen</li>
+                            </ul>
+                        </p>
                     </section>
 
                     <section>
-                        <h2>User => Rechte und Rollen</h2>
-                        <p></p>
+                        <h2>User, Rechte und Rollen</h2>
+                        <p>
+                            <li>Benutzer melden sich mit Benutzername und Passwort an</li>
+                            <li>Benutzer haben eine Rolle, z.B. Administrator, die zeigt welche Funktionen sie ausführen dürfen (Rechte)</li>
+                            <li>Benutzer haben Zugriff auf ihre erstellen Artefakte</li>
+                            <li>Anmeldung kann extern erfolgen, OAuth (z.B. Google)</li>
+                        </p>
                     </section>
 
                     <section>
                         <h2>Admin-Schnittstelle</h2>
-                        <p></p>
+                        <p>
+                           <ul>
+                                <li>Die Pflege erfolgt meist hier</li>
+                                <li>Konfiguration des Systems</li>
+                                <li>Getrennt von der eigentlichen Webseite</li>
+                                <li>Geschützte mit Passwort</li>
+                           </ul>
+                        </p>
                     </section>
 
                     <section>
                         <h2>Frontend</h2>
-                        <p></p>
+                        <p>
+                            <li>Ausgabe der Inhalte</li>
+                            <li>Herzstück des CMS</li>
+                            <li>Im angemeldeten Zustan manchmal andere Ansicht verfügbar</li>
+                            <li>Frontend-Editing</li>
+                        </p>
                     </section>
 
                     <section>
                         <h2>Staging-Umgebung / Preview</h2>
-                        <p></p>
-                    </section>
-
-                    <section>
-                        <h2>Frontend-Editing</h2>
-                        <p></p>
+                        <p>
+                            <li>Ansicht nicht finalisierter Inhalte</li>
+                            <li>Staging bezeichnet meist ein eigenes System z.B. bei Offline-CMS</li>
+                            <li>Preview meist wie "fertiger" Artikel, also im Frontend</li>
+                        </p>
                     </section>
 
                     <section>
                         <h2>Workflows</h2>
-                        <p></p>
+                        <p>
+                            <li>Definition von Prozessen, wer was wann im System tun darf</li>
+                            <li>Anlegen, Ändern, Speichern, Freigeben, Publizieren, ...</li>
+                            <li>Meistens mit dem Rollensystem verknüpft</li>
+                        </p>
                     </section>
 
                     <section>
@@ -1200,7 +1268,11 @@ page.10.wrap = <h2>|</h2>
 
                     <section>
                         <h2>Metainformationen (eröffentlichungsdatum, Autor, Inhaltsverzeichnis,)</h2>
-                        <p></p>
+                        <p>
+                            <ul>
+                                <li>Tags / Kategorien / Schlagwörter</li>
+                            </ul>
+                        </p>
                     </section>
 
                     <section>
@@ -1225,7 +1297,11 @@ page.10.wrap = <h2>|</h2>
 
                     <section>
                         <h2>Security</h2>
-                        <p></p>
+                        <p>
+                            <ul>
+                                <li>Google Authenticator</li>
+                            </ul>
+                        </p>
                     </section>
 
                     <section>
@@ -1290,12 +1366,83 @@ page.10.wrap = <h2>|</h2>
                 <section>
                     <section>
                         <h1>05. Wordpress</h1>
+                    </section>
+
+                    <section>
+                        <h2>Allgemeines</h2>
                         <p>
-                            Installation, Durchclicken, Plugins, Templates, Blog vs. CMS, Menüs, Widgets...
-                            Anpassung Template, Installation Plugin, Artikel anlegen, Seiten anlegen, Templates installieren,
-                            Statistik, Mehrsprachigkeit, meist installiertes system, vorteile, nachteile, geschichte, import export, preview
-                            Interessante Seiten (Hilfe, Plugins, ...), Case Studies, Workflow mit Hilfe der Rollen
+                            WordPress ist eine freie Software zur Verwaltung der Inhalte einer Website (Texte und Bilder).
+                            Sie bietet sich besonders zum Aufbau und zur Pflege eines Weblogs an,
+                            da sie jeden Beitrag einer oder mehreren frei erstellbaren Kategorien zuzuweisen kann und
+                            dazu automatisch die entsprechenden Navigationselemente erzeugt.
                         </p>
+                        <p>
+                            Parallel kann WordPress auch hierarchische Seiten verwalten und gestattet den Einsatz als CMS.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>Voraussetzungen</h2>
+                        <p>
+                            <ul>
+                                <li>PHP version 5.2.4 oder höher.</li>
+                                <li>MySQL version 5.0 oder höher.</li>
+                            </ul>
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>Installation</h2>
+                        <p>
+                            <ol>
+                                <li>Entpacke die Datei in ein leeres Verzeichnis.</li>
+                                <li>
+                                    Öffne die Datei wp-config-sample.php mit einem reinen Texteditor,
+                                    wie WordPad oder ähnliches (nicht Word!) und trage Deine Datenbankdetails ein.
+                                </li>
+                                <li>Speichere die Datei jetzt als wp-config.php ab.</li>
+                                <li>Lade alles auf den Server hoch.</li>
+                                <li>
+                                    Gehe mit Deinem Browser zu /wp-admin/install.php. Das sollte jetzt die Tabellen erstellen,
+                                    die Du für Dein Weblog benötigst. Wenn es eine Fehlermeldung gibt überprüfe nochmals ganz genau
+                                    Deine wp-config.php und versuche es erneut.
+                                    Wenn es wieder nicht funktioniert, dann gehe bitte mit so viel Informationen,
+                                    wie möglich, zu den Support-Foren (eng.).
+                                </li>
+                                <li>Merke Dir das Passwort, das Du bekommst.</li>
+                                <li>
+                                    Das Installationsskript schickt Dich anschließend zur Anmeldeseite.
+                                    Gebe als Benutzernamen admin ein und darunter das Passwort,
+                                    dass das Skript für Dich inzwischen generiert hat.
+                                    Nach der Anmeldung kannst Du auf Benutzer/ Dein Profil klicken um das Passwort ändern zu können.
+                                </li>
+                            </ol>
+                        </p>
+                        <div class="fragment">
+                            <p>
+                                Und jetzt ihr ;)
+                            </p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2>Ausprobieren</h2>
+                        <h3>Bitte auf folgendes achten / ausprobieren:</h3>
+                        <ul>
+                            <li>Plugins (Installation & Konfiguration)</li>
+                            <li>Themes (Installation, Anpassen via Admin, Anpassen via CSS)</li>
+                            <li>Blog vs. CMS Funktionalität</li>
+                            <li>Was zum Teufel sind Menüs</li>
+                            <li>Widgets einbinden und konfigurieren</li>
+                            <li>Statistik anzeigen</li>
+                            <li>Artikel anlegen und editieren</li>
+                            <li>Seiten anlegen und editieren</li>
+                            <li>Preview Funktion</li>
+                            <li>Mehrsprachigkeit</li>
+                            <li>Import und Export</li>
+                            <li>SEO</li>
+                            <li>Verschiedene Benutzerrollen</li>
+                        </ul>
                     </section>
                 </section>
 
@@ -1350,7 +1497,9 @@ page.10.wrap = <h2>|</h2>
                 <section>
                     <section>
                         <h1>10. Übung</h1>
-                        <p>Zielsetzung, ..., Vorschlag eigene Bewerbungsseite mit CV, link zu Projekten, ...</p>
+                        <p>Vorschlag eigene Bewerbungsseite mit CV, Links zu Projekten, ...</p>
+                        <p>In einem CMS eurer Wahl (Wenn es geht nicht alle das gleiche)</p>
+                        <p>Am Ende kurz 10 - 15 min Grundfunktionalitäten vorstellen und kritische Würdigung</p>
                     </section>
                 </section>
 
