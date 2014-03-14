@@ -814,7 +814,7 @@ echo $twig->render('index.tpl.html', array('bla' => 'blubb', 'blubb' => 'bla'));
 page = PAGE
 page.10 = TEXT
 page.10.value = Hello, world!
-page.10.wrap = <h2>|</h2>
+page.10.wrap = &lt;h2&gt;|&lt;/h2&gt;
                         </code></pre>
                     </section>
 
@@ -1137,14 +1137,14 @@ page.10.wrap = <h2>|</h2>
                         <h2>Dateisystem</h2>
                         <ul>
                             <li>Beinhaltet die Dateien des CMS</li>
-                            <li>Meistens Speicherung von Medieninhalten (Bilder, Videos, ...)</li>
+                            <li>Meistens Speicherung von Medieninhalten wie zum Beispiel Bilder und Videos</li>
                         </ul>
                     </section>
 
                     <section>
                         <h2>Datenbank</h2>
                         <ul>
-                            <li>Speichert Daten (Artikel, Seiten, Einstellungen, ...)</li>
+                            <li>Speichert Daten wie zum Beispiel Artikel, Seiten und Einstellungen </li>
                             <li>Speicherung von Metadaten zu Medieninhalten</li>
                             <li>Sehr oft MySQL</li>
                             <li>Oft auch andere Datenbanken (SQL & NoSQL)</li>
@@ -1153,7 +1153,6 @@ page.10.wrap = <h2>|</h2>
 
                     <section>
                         <h2>CMS - Core</h2>
-                        <p>Kombinieren von Daten und Layout</p>
                         <ul>
                             <li>Enthält die Kernfunktionalität des CMS</li>
                             <li>Kombinieren von Daten und Layout</li>
@@ -1163,185 +1162,235 @@ page.10.wrap = <h2>|</h2>
 
                     <section>
                         <h2>Seiten</h2>
-                        <p>
-                            <ul>
-                                <li>Unterteilung in Titel, Text, Teaser, ...</li>
-                                <li>Basis Inhalt eines CMS</li>
-                                <li>Mix aus Text, Links, Bildern, ...</li>
-                                <li>Wiederverwendbarkeit</li>
-                                <li>Speicherung vs. Publikation</li>
-                                <li>Haben Metadaten</li>
-                            </ul>
-                        </p>
+                        <ul>
+                            <li>Unterteilung in Titel, Text, Teaser und evtl. weitere Unterelemente</li>
+                            <li>Basis Inhalt eines CMS</li>
+                            <li>Mix aus Text, Links, Bildern, ...</li>
+                            <li>Wiederverwendbarkeit</li>
+                            <li>Speicherung vs. Publikation</li>
+                            <li>Haben Metadaten</li>
+                        </ul>
                     </section>
 
                     <section>
                         <h2>Artikel / News</h2>
-                        <p>
+                        <ul>
                             <li>Konnt aus der Welt der Blogs</li>
                             <li>Eher ein kurzer Text mit Überschrift</li>
                             <li>Mix aus Text, Links, Bildern, ...</li>
                             <li>Darstellung meist als Liste</li>
                             <li>Haben Metadaten</li>
-                        </p>
+                        </ul>
                     </section>
 
                     <section>
                         <h2>Menüs</h2>
-                        <p>
-                            <ul>
-                                <li>Navigation innerhalb der Webseite</li>
-                                <li>Kann mehrere geben</li>
-                                <li>Meistens beliebig verlinkbar</li>
-                                <li>Personalisierbar</li>
-                            </ul>
-                        </p>
+                        <ul>
+                            <li>Navigation innerhalb der Webseite</li>
+                            <li>Kann mehrere geben</li>
+                            <li>Meistens beliebig verlinkbar</li>
+                            <li>Personalisierbar</li>
+                        </ul>
                     </section>
 
                     <section>
                         <h2>Assets</h2>
-                        <p>
-                            <ul>
-                                <li>Dateieien innerhalb eines CMS</li>
-                                <li>Oft via DMS gepflegt</li>
-                                <li>Haben einen Typ</li>
-                                <li>Haben Metadaten</li>
-                                <li>Lassen sich innerhalb von Artikeln benutzen</li>
-                            </ul>
-                        </p>
+                        <ul>
+                            <li>Dateieien innerhalb eines CMS</li>
+                            <li>Oft via DMS gepflegt</li>
+                            <li>Haben einen Typ</li>
+                            <li>Haben Metadaten</li>
+                            <li>Lassen sich innerhalb von Artikeln benutzen</li>
+                        </ul>
                     </section>
 
                     <section>
                         <h2>User, Rechte und Rollen</h2>
-                        <p>
+                        <ul>
                             <li>Benutzer melden sich mit Benutzername und Passwort an</li>
                             <li>Benutzer haben eine Rolle, z.B. Administrator, die zeigt welche Funktionen sie ausführen dürfen (Rechte)</li>
                             <li>Benutzer haben Zugriff auf ihre erstellen Artefakte</li>
                             <li>Anmeldung kann extern erfolgen, OAuth (z.B. Google)</li>
-                        </p>
+                        </ul>
                     </section>
 
                     <section>
                         <h2>Admin-Schnittstelle</h2>
-                        <p>
-                           <ul>
-                                <li>Die Pflege erfolgt meist hier</li>
-                                <li>Konfiguration des Systems</li>
-                                <li>Getrennt von der eigentlichen Webseite</li>
-                                <li>Geschützte mit Passwort</li>
-                           </ul>
-                        </p>
+                       <ul>
+                            <li>Die Pflege erfolgt meist hier</li>
+                            <li>Konfiguration des Systems</li>
+                            <li>Getrennt von der eigentlichen Webseite</li>
+                            <li>Geschützte mit Passwort</li>
+                       </ul>
                     </section>
 
                     <section>
                         <h2>Frontend</h2>
-                        <p>
+                        <ul>
                             <li>Ausgabe der Inhalte</li>
                             <li>Herzstück des CMS</li>
                             <li>Im angemeldeten Zustan manchmal andere Ansicht verfügbar</li>
                             <li>Frontend-Editing</li>
-                        </p>
+                        </ul>
                     </section>
 
                     <section>
                         <h2>Staging-Umgebung / Preview</h2>
-                        <p>
+                        <ul>
                             <li>Ansicht nicht finalisierter Inhalte</li>
                             <li>Staging bezeichnet meist ein eigenes System z.B. bei Offline-CMS</li>
                             <li>Preview meist wie "fertiger" Artikel, also im Frontend</li>
-                        </p>
+                        </ul>
                     </section>
 
                     <section>
                         <h2>Workflows</h2>
-                        <p>
+                        <ul>
                             <li>Definition von Prozessen, wer was wann im System tun darf</li>
                             <li>Anlegen, Ändern, Speichern, Freigeben, Publizieren, ...</li>
                             <li>Meistens mit dem Rollensystem verknüpft</li>
-                        </p>
+                        </ul>
                     </section>
 
                     <section>
                         <h2>Statistiken</h2>
-                        <p></p>
+                        <ul>
+                            <li>Anzeige von Zugriffen auf das CMS</li>
+                            <li>Diagramme</li>
+                            <li>Oft externe Dienste (z.B. Jetpack bei Wordpress)</li>
+                        </ul>
                     </section>
 
                     <section>
-                        <h2>Metainformationen (eröffentlichungsdatum, Autor, Inhaltsverzeichnis,)</h2>
-                        <p>
-                            <ul>
-                                <li>Tags / Kategorien / Schlagwörter</li>
-                            </ul>
-                        </p>
+                        <h2>Metainformationen</h2>
+                        <ul>
+                            <li>Tags / Kategorien / Schlagwörter</li>
+                            <li>Veröffentlichungsdatum, Author</li>
+                            <li>Dateityp, Exif-Daten, MP3 / Video Metadaten</li>
+                            <li>Oft durchsuchbar</li>
+                            <li>Geodaten</li>
+                        </ul>
                     </section>
 
                     <section>
                         <h2>Link-Management</h2>
-                        <p>Interne Verlinkung</p>
+                        <ul>
+                            <li>Links auf andere Artikel, Assets, ...</li>
+                            <li>Find von toten Links bei Entfernung des Ziels</li>
+                        </ul>
                     </section>
 
                     <section>
-                        <h2>Templates</h2>
-                        <p>Themes, Widgets, Layouts, Partials, Pages, ...</p>
+                        <h2>Design</h2>
+                        <ul>
+                            <li>Erscheinungsbild des CMS</li>
+                            <li>Begrifflichkeiten meist verschieden</li>
+                            <li><i>Themes / Layout:</i><br />Komplettes Erscheinungsbild</li>
+                            <li><i>Page:</i><br />Seite eines Themes / Layouts</li>
+                            <li><i>Template:</i><br />Datei mit Platzhaltern für Inhalte</li>
+                            <li><i>Widgets:</i><br />Elemente (z.B. Tag-Cloud) zum Einbau z.B. im Menü</li>
+                            <li><i>Partials:</i><br />Wiederverwendbare Teile eines Templates</li>
+                        </ul>
                     </section>
 
                     <section>
                         <h2>Plugins / Extensions</h2>
-                        <p></p>
+                        <ul>
+                            <li>Erweiterung der Funktionalität</li>
+                            <li>Meist aus der Community</li>
+                            <li>CMS bieten eine API und Hooks</li>
+                            <li>Potentielle Sicherheitslücke</li>
+                        </ul>
                     </section>
 
                     <section>
-                        <h2>Multilanguage inkl. Herangehensweise</h2>
-                        <p></p>
+                        <h2>Multilanguage</h2>
+                        <ul>
+                            <li>CMS in nur einer Sprache</li>
+                            <li>CMS, bei welchem Artefakte übersetzt werden können => Gleiche Struktur</li>
+                            <li>CMS, die für jede Sprache eine andere Struktur bieten, z.B. über Mandanten</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Mandanten</h2>
+                        <ul>
+                            <li>Verwalten mehrere Projekte in einem CMS</li>
+                            <li>Mehrere Seiten</li>
+                            <li>Mehrere Sprachen der selben Seite</li>
+                        </ul>
                     </section>
 
                     <section>
                         <h2>Security</h2>
-                        <p>
-                            <ul>
-                                <li>Google Authenticator</li>
-                            </ul>
-                        </p>
+                        <ul>
+                            <li>Die Admin-Schnittstelle ist DER Angriffsvektor, da die URL bekannt ist</li>
+                            <li>Regelmäßige Updates</li>
+                            <li>Keine Standard-Accounts</li>
+                            <li>Vorsicht bei Plugins, nur offizielle</li>
+                            <li>Einmal Passwörter benutzen z.B. Google Authenticator</li>
+                        </ul>
                     </section>
 
                     <section>
                         <h2>SEO</h2>
-                        <p></p>
+                        <ul>
+                            <li>Grundanforderung an jedes CMS</li>
+                            <li>Schöne URLs über Rewrites</li>
+                            <li>Google Sitemap</li>
+                            <li>Interne Verlinkung muss stimmen</li>
+                            <li>Rich snippets für verschieden Inhaltstypen</li>
+                        </ul>
                     </section>
 
                     <section>
                         <h2>Barriefreiheit</h2>
-                        <p></p>
+                        <ul>
+                            <li>Die meisten CMS sind hier noch nicht so gut</li>
+                            <li>Semantic Web</li>
+                            <li>Responsiveness schwingt hier mit</li>
+                        </ul>
                     </section>
 
                     <section>
                         <h2>Suche</h2>
-                        <p></p>
+                        <ul>
+                            <li>Mittlerweile eines der zentralen Elemente jeder Webseite</li>
+                            <li>Suchen ist kompliziert</li>
+                            <li>Unscharfe Suchen</li>
+                            <li>Vorschlagssuche</li>
+                            <li>Meinten Sie...</li>
+                            <li>Apache Lucene bzw. abgeleitete Produkte im Einsatz</li>
+                            <li>Geosuche</li>
+                        </ul>
                     </section>
 
                     <section>
                         <h2>Import</h2>
-                        <p></p>
+                        <ul>
+                            <li>RSS-Feeds</li>
+                            <li>Twitter</li>
+                            <li>Social-Media Streams / Comments</li>
+                            <li>Exporte (Backups)</li>
+                        </ul>
                     </section>
 
                     <section>
-                        <h2>Export (RSS), Druckversion, PDF, Geodata</h2>
-                        <p>RSS, andere Blogs</p>
+                        <h2>Export</h2>
+                        <ul>
+                            <li>RSS-Feeds</li>
+                            <li>Twitter</li>
+                            <li>Social-Media Streams / Comments</li>
+                            <li>Backups</li>
+                        </ul>
                     </section>
 
                     <section>
-                        <h2>Druckversion</h2>
-                        <p></p>
-                    </section>
-
-                    <section>
-                        <h2>PDF</h2>
-                        <p></p>
-                    </section>
-
-                    <section>
-                        <h2>Geodata</h2>
-                        <p></p>
+                        <h2>Druckversion / PDF</h2>
+                        <ul>
+                            <li>Druckfreundliche Darstellung</li>
+                            <li>Grundfunktionalität der meisten CMS mittlerweile</li>
+                        </ul>
                     </section>
                 </section>
 
@@ -1382,45 +1431,51 @@ page.10.wrap = <h2>|</h2>
                     </section>
 
                     <section>
+                        <h2>Beispiele</h2>
+                        <ul>
+                            <li><a href="http://www.zapadlo.de" target="_blank">Ich ;)</a></li>
+                            <li><a href="http://www.coca-cola.fr/" target="_blank">Coca Cola Frankreich</a></li>
+                            <li><a href="http://www.sonymusic.com/" target="_blank">Sony Music</a></li>
+                            <li><a href="http://www.mavs.com/" target="_blank">Dallas Mavericks</a></li>
+                        </ul>
+                    </section>
+
+                    <section>
                         <h2>Voraussetzungen</h2>
-                        <p>
-                            <ul>
-                                <li>PHP version 5.2.4 oder höher.</li>
-                                <li>MySQL version 5.0 oder höher.</li>
-                            </ul>
-                        </p>
+                        <ul>
+                            <li>PHP version 5.2.4 oder höher.</li>
+                            <li>MySQL version 5.0 oder höher.</li>
+                        </ul>
                     </section>
 
                     <section>
                         <h2>Installation</h2>
-                        <p>
-                            <ol>
-                                <li>Entpacke die Datei in ein leeres Verzeichnis.</li>
-                                <li>
-                                    Öffne die Datei wp-config-sample.php mit einem reinen Texteditor,
-                                    wie WordPad oder ähnliches (nicht Word!) und trage Deine Datenbankdetails ein.
-                                </li>
-                                <li>Speichere die Datei jetzt als wp-config.php ab.</li>
-                                <li>Lade alles auf den Server hoch.</li>
-                                <li>
-                                    Gehe mit Deinem Browser zu /wp-admin/install.php. Das sollte jetzt die Tabellen erstellen,
-                                    die Du für Dein Weblog benötigst. Wenn es eine Fehlermeldung gibt überprüfe nochmals ganz genau
-                                    Deine wp-config.php und versuche es erneut.
-                                    Wenn es wieder nicht funktioniert, dann gehe bitte mit so viel Informationen,
-                                    wie möglich, zu den Support-Foren (eng.).
-                                </li>
-                                <li>Merke Dir das Passwort, das Du bekommst.</li>
-                                <li>
-                                    Das Installationsskript schickt Dich anschließend zur Anmeldeseite.
-                                    Gebe als Benutzernamen admin ein und darunter das Passwort,
-                                    dass das Skript für Dich inzwischen generiert hat.
-                                    Nach der Anmeldung kannst Du auf Benutzer/ Dein Profil klicken um das Passwort ändern zu können.
-                                </li>
-                            </ol>
-                        </p>
+                        <ol>
+                            <li>Entpacke die Datei in ein leeres Verzeichnis.</li>
+                            <li>
+                                Öffne die Datei wp-config-sample.php mit einem reinen Texteditor,
+                                wie WordPad oder ähnliches (nicht Word!) und trage Deine Datenbankdetails ein.
+                            </li>
+                            <li>Speichere die Datei jetzt als wp-config.php ab.</li>
+                            <li>Lade alles auf den Server hoch.</li>
+                            <li>
+                                Gehe mit Deinem Browser zu /wp-admin/install.php. Das sollte jetzt die Tabellen erstellen,
+                                die Du für Dein Weblog benötigst. Wenn es eine Fehlermeldung gibt überprüfe nochmals ganz genau
+                                Deine wp-config.php und versuche es erneut.
+                                Wenn es wieder nicht funktioniert, dann gehe bitte mit so viel Informationen,
+                                wie möglich, zu den Support-Foren (eng.).
+                            </li>
+                            <li>Merke Dir das Passwort, das Du bekommst.</li>
+                            <li>
+                                Das Installationsskript schickt Dich anschließend zur Anmeldeseite.
+                                Gebe als Benutzernamen admin ein und darunter das Passwort,
+                                dass das Skript für Dich inzwischen generiert hat.
+                                Nach der Anmeldung kannst Du auf Benutzer/ Dein Profil klicken um das Passwort ändern zu können.
+                            </li>
+                        </ol>
                         <div class="fragment">
                             <p>
-                                Und jetzt ihr ;)
+                                <strong>Und jetzt ihr ;)</strong>
                             </p>
                         </div>
                     </section>
@@ -1449,48 +1504,272 @@ page.10.wrap = <h2>|</h2>
                 <section>
                     <section>
                         <h1>06. Contao</h1>
+                    </section>
+
+                    <section>
+                        <h2>Allgemeines</h2>
                         <p>
-                            Voraussetzungen, Installation, Durchclicken, Plugins, Themes, Layouts, Module, Templates, Handbuch,
-                            Anpassung Template, Installation Plugin, Artikel anlegen, Seiten anlegen, Templates installieren, Staging,
-                            Mehrsprachigkeit
-                            Interessante Seiten (Hilfe, Plugins, ...), Case Studies
+                            Contao (früher TYPOlight) ist ein freies Content-Management-System (CMS) für mittlere bis große Websites.
+                            Es ist ein Open-Source-Projekt und erschien erstmals 2006.
+                            Als Datenbank wird MySQL verwendet.
+                            Das System lässt sich aus einem Pool von über 1500 Erweiterungen in seiner Funktionalität erweitern.
                         </p>
+                    </section>
+
+                    <section>
+                        <h2>Beispiele</h2>
+                        <ul>
+                            <li><a href="http://kicken.pro-event.de/" target="_blank">Kicken für den guten Zweck</a></li>
+                            <li><a href="https://contao.org/de/" target="_blank">Contao Webseite</a></li>
+                            <li><a href="http://www.bkw.ch/home.html" target="_blank">BKW Energie AG</a></li>
+                            <li><a href="http://www.altersvorsorge-sparkasse.de/" target="_blank">Sparkasse Cham</a></li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Voraussetzungen</h2>
+                        <p>
+                            Contao benötigt einen Webserver wie Apache oder IIS mit PHP- und MySQL-Support.
+                            PHP muss mindestens in der Version 5.3.2 vorliegen und MySQL in der Version 5.0.
+                            Außerdem benötigen Sie die PHP-Erweiterungen "GDlib" (Bildbearbeitung),
+                            "DOM" (XML-Dateien) und "SOAP" (Extension Repository) sowie optional "mbstring" (internationale Zeichen)
+                            und "mcrypt" (Verschlüsselung).
+                            Contao wurde erfolgreich in allen modernen Browsern wie Firefox (ab Version 2) oder
+                            Internet Explorer (ab Version 8) getestet.
+                        </p>
+                        <p>
+                            <a href="https://github.com/contao/check">Der Conato Check</a>
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>Installation</h2>
+                        <p>
+                            <a href="https://contao.org/de/manual/3.2/installation.html#contao-installieren">Installation</a>
+                        </p>
+                        <div class="fragment">
+                            <p>
+                                <strong>Und jetzt ihr ;)</strong>
+                            </p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2>Ausprobieren</h2>
+                        <h3>Bitte auf folgendes achten / ausprobieren:</h3>
+                        <ul>
+                            <li>Plugins (Installation & Konfiguration)</li>
+                            <li>Themes (Installation, Anpassen via Admin, Anpassen via CSS)</li>
+                            <li>Benutzung von Modulen</li>
+                            <li>Statistik anzeigen</li>
+                            <li>Seiten anlegen und editieren</li>
+                            <li>Preview Funktion</li>
+                            <li>Mehrsprachigkeit</li>
+                            <li>Import und Export</li>
+                            <li>SEO</li>
+                            <li>Verschiedene Benutzerrollen</li>
+                        </ul>
                     </section>
                 </section>
 
                 <section>
                     <section>
                         <h1>07. Joomla</h1>
+                    </section>
+
+                    <section>
+                        <h2>Allgemeines</h2>
                         <p>
-                            Voraussetzungen, Installation, Durchclicken, Plugins, Themes, Layouts, Module, Templates, Handbuch,
-                            Anpassung Template, Installation Plugin, Artikel anlegen, Seiten anlegen, Templates installieren, Staging,
-                            Mehrsprachigkeit
-                            Interessante Seiten (Hilfe, Plugins, ...), Case Studies
+                            Joomla ([ʤuːmlə], Eigenschreibweise Joomla!) ist ein verbreitetes freies Content-Management-System (CMS)
+                            zur Erstellung von Webseiten.
                         </p>
+                        <p>
+                            Joomla steht unter der GNU General Public License.
+                            Es ist in PHP 5 geschrieben und verwendet MySQL als Datenbank.
+                            Zusammen mit WordPress, TYPO3, Contao und Drupal gehört es zu den bekanntesten und meistverwendeten
+                            Open-Source-Content-Management-Systemen.
+                            Historisch ist Joomla aus dem Open-Source-Projekt Mambo hervorgegangen.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>Beispiele</h2>
+                        <ul>
+                            <li><a href="http://timessquare.com/" target="_blank">Timesquare</a></li>
+                            <li><a href="http://www.peugeot.com/" target="_blank">Peugeot</a></li>
+                            <li><a href="http://gsas.harvard.edu/" target="_blank">Harvard University</a></li>
+                            <li><a href="http://www.quizilla.com/" target="_blank">MTV Networks Quizilla</a></li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Voraussetzungen</h2>
+                        <ul>
+                            <li>PHP (Magic Quotes GPC off) >= 5.4</li>
+                            <li>MySQL  (InnoDB support required) >= 5.1</li>
+                            <li>Alternativ: MSSQL >=  10.50.1600.1 oder PostgreSQL >= 8.3.18</li>
+                            <li>Apache(with mod_mysql, mod_xml, and mod_zlib) >= 2.0</li>
+                            <li>Alternativ: Nginx >= 1.1 oder Microsoft IIS >= 7</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Installation</h2>
+                        <a href="http://docs.joomla.org/J3.2:Installing_Joomla!#tab=Prepare_for_Install">Installation</a>
+                        <div class="fragment">
+                            <p>
+                                <strong>Und jetzt ihr ;)</strong>
+                            </p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2>Ausprobieren</h2>
+                        <h3>Bitte auf folgendes achten / ausprobieren:</h3>
+                        <ul>
+                            <li>Plugins (Installation & Konfiguration)</li>
+                            <li>Themes (Installation, Anpassen via Admin, Anpassen via CSS)</li>
+                            <li>Statistik anzeigen</li>
+                            <li>Seiten anlegen und editieren</li>
+                            <li>Preview Funktion</li>
+                            <li>Mehrsprachigkeit</li>
+                            <li>Import und Export</li>
+                            <li>SEO</li>
+                            <li>Verschiedene Benutzerrollen</li>
+                        </ul>
                     </section>
                 </section>
 
                 <section>
                     <section>
                         <h1>08. Drupal</h1>
+                    </section>
+
+                    <section>
+                        <h2>Allgemeines</h2>
                         <p>
-                            Voraussetzungen, Installation, Durchclicken, Plugins, Themes, Layouts, Module, Templates, Handbuch,
-                            Anpassung Template, Installation Plugin, Artikel anlegen, Seiten anlegen, Templates installieren, Staging,
-                            Mehrsprachigkeit
-                            Interessante Seiten (Hilfe, Plugins, ...), Case Studies
+                            Drupal ist ein Content-Management-System (CMS) und -Framework.
+                            Seine Hauptanwendung findet Drupal bei der Organisation von Websites, zurzeit (März 2014) bei 1,9 %
+                            aller Websites mit einem Marktanteil von 5,4 % bei CMS laut W3Techs.
+                            Ursprünglich wurde es vom belgischen Informatiker Dries Buytaert konzipiert.
+                            Drupal ist freie Software und steht unter der GNU General Public License.
+                            Es ist in PHP geschrieben und verwendet MySQL/MariaDB (empfohlen), PostgreSQL (unterstützt),
+                            SQLite (ab 7.x), Oracle (in Entwicklung) oder MSSQL (in Entwicklung) als Datenbanksystem.
                         </p>
+                    </section>
+
+                    <section>
+                        <h2>Beispiele</h2>
+                        <ul>
+                            <li><a href="http://www.whitehouse.gov" target="_blank">whitehouse.gov, die Website des Weißen Hauses</a></li>
+                            <li><a href="http://www.economist.com" target="_blank">economist.com, die Website des Economist</a></li>
+                            <li><a href="http://www.amnesty.org" target="_blank">amnesty.org, die Website von Amnesty International</a></li>
+                            <li><a href="http://www.WFP.org" target="_blank">WFP.org, die Website des Welternährungsprogramms der Vereinten Nationen</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Voraussetzungen</h2>
+                        <ul>
+                            <li>PHP >= 5.4</li>
+                            <li>MySQL >= 5.0.15 mit PDO</li>
+                            <li>Alternativ: PostgreSQL >= 8.3 oder SQLite >= 3.3.7</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Installation</h2>
+                        <p>
+                            <a href="https://drupal.org/documentation/install/download">Installation</a>
+                        </p>
+                        <div class="fragment">
+                            <p>
+                                <strong>Und jetzt ihr ;)</strong>
+                            </p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2>Ausprobieren</h2>
+                        <h3>Bitte auf folgendes achten / ausprobieren:</h3>
+                        <ul>
+                            <li>Plugins (Installation & Konfiguration)</li>
+                            <li>Themes (Installation, Anpassen via Admin, Anpassen via CSS)</li>
+                            <li>CMS vs. Blog Funktionalität</li>
+                            <li>Statistik anzeigen</li>
+                            <li>Seiten anlegen und editieren</li>
+                            <li>Preview Funktion</li>
+                            <li>Mehrsprachigkeit</li>
+                            <li>Import und Export</li>
+                            <li>SEO</li>
+                            <li>Verschiedene Benutzerrollen</li>
+                        </ul>
                     </section>
                 </section>
 
                 <section>
                     <section>
                         <h1>09. Typo3</h1>
+                    </section>
+
+                    <section>
+                        <h2>Allgemeines</h2>
                         <p>
-                            Voraussetzungen, Installation, Durchclicken, Plugins, Templates, Menüs, Widgets...
-                            Anpassung Template, Installation Plugin, Artikel anlegen, Seiten anlegen, Templates installieren,
-                            Mehrsprachigkeit
-                            Interessante Seiten (Hilfe, Plugins, ...), Case Studies
+                            TYPO3 ist ein freies Content-Management-Framework für Websites/ Internetseiten,
+                            welches seit Oktober 2012 offiziell unter dem Namen TYPO3 CMS angeboten wird.
+                            Ursprünglich wurde TYPO3 von Kasper Skårhøj entwickelt. TYPO3 basiert auf der Skriptsprache PHP.
+                            Als Datenbank kann MySQL oder MariaDB, aber auch PostgreSQL oder Oracle eingesetzt werden.
                         </p>
+                    </section>
+
+                    <section>
+                        <h2>Beispiele</h2>
+                        <ul>
+                            <li><a href="http://www.sachsen-anhalt.de/" target="_blank">Website des Landes Sachsen-Anhalt</a></li>
+                            <li><a href="http://www.gruene.de/" target="_blank">Offizielle Website von Bündnis 90/Die Grünen</a></li>
+                            <li><a href="http://www.tu-berlin.de/" target="_blank">Homepage der Technischen Universität Berlin</a></li>
+                            <li><a href="http://www.dfb.de/" target="_blank">Offizielle Webseite des DFB</a></li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Voraussetzungen</h2>
+                        <ul>
+                            <li>PHP 5.3.7-5.5.x</li>
+                            <li>MySQL 5.1.x-5.5.x</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Installation</h2>
+                        <ol>
+                            <li>Unzip / untar your downloaded introduction package in the root folder of your web server</li>
+                            <li>Make sure that the web server user has write permissions to the folders fileadmin/,typo3conf/,typo3temp/ and uploads/</li>
+                            <li>Go to http://your-site.example.org/ with a browser, you should get redirected to the TYPO3 installer</li>
+                            <li>If this does not happen, create a file called ENABLE_INSTALL_TOOL in the folder typo3conf/</li>
+                            <li>Follow the installer steps</li>
+                        </ol>
+                        <div class="fragment">
+                            <p>
+                                <strong>Und jetzt ihr ;)</strong>
+                            </p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2>Ausprobieren</h2>
+                        <h3>Bitte auf folgendes achten / ausprobieren:</h3>
+                        <ul>
+                            <li>Plugins (Installation & Konfiguration)</li>
+                            <li>Themes (Installation, Anpassen via Admin, Anpassen via CSS)</li>
+                            <li>Statistik anzeigen</li>
+                            <li>Seiten anlegen und editieren</li>
+                            <li>Preview Funktion</li>
+                            <li>Mehrsprachigkeit</li>
+                            <li>Zeitliche Steuerung von Artikeln</li>
+                            <li>Import und Export</li>
+                            <li>SEO</li>
+                            <li>Verschiedene Benutzerrollen</li>
+                        </ul>
                     </section>
                 </section>
 
