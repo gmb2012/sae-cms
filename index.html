@@ -990,6 +990,26 @@ page.10.wrap = &lt;h2&gt;|&lt;/h2&gt;
                     </section>
 
                     <section>
+                        <h2>Exkurs: Caching</h2>
+                        <h3>Zwischenspeichern von Inhalten</h3>
+                        <p>
+                            Cache bezeichnet in der EDV einen schnellen Puffer-Speicher,
+                            der (erneute) Zugriffe auf ein langsames Hintergrundmedium oder aufwändige Neuberechnungen
+                            zu vermeiden hilft. Inhalte/Daten,
+                            die bereits einmal beschafft/berechnet wurden, verbleiben im Cache,
+                            sodass sie bei späterem Bedarf schneller zur Verfügung stehen.
+                            Auch können Daten, die vermutlich bald benötigt werden, vorab vom Hintergrundmedium abgerufen
+                            und vorerst im Cache bereitgestellt werden.
+                        </p>
+                        <ul>
+                            <li>Caching der gesamenten Seite</li>
+                            <li>Caching von Seitenbestandteilen</li>
+                            <li>Html vs. JSON / PHP-serialisiert</li>
+                            <li>Aktualiserung des Caches</li>
+                        </ul>
+                    </section>
+
+                    <section>
                         <h2>Volldynamische Systeme</h2>
                         <h3>Auch Online oder Web-CMS genannt</h3>
                         <p>
@@ -1161,8 +1181,10 @@ page.10.wrap = &lt;h2&gt;|&lt;/h2&gt;
                     <section>
                         <h2>Seiten</h2>
                         <ul>
-                            <li>Unterteilung in Titel, Text, Teaser und evtl. weitere Unterelemente</li>
                             <li>Basis Inhalt eines CMS</li>
+                            <li>Seite hat eine URL</li>
+                            <li>Seite als Container für andere Inhalte / Wurzel eines Baums</li>
+                            <li>Unterteilung in Titel, Text, Teaser und evtl. weitere Unterelemente</li>
                             <li>Mix aus Text, Links, Bildern, ...</li>
                             <li>Wiederverwendbarkeit</li>
                             <li>Speicherung vs. Publikation</li>
@@ -1178,6 +1200,19 @@ page.10.wrap = &lt;h2&gt;|&lt;/h2&gt;
                             <li>Mix aus Text, Links, Bildern, ...</li>
                             <li>Darstellung meist als Liste</li>
                             <li>Haben Metadaten</li>
+                            <li>Werden als Liste oder einzeln auf Seite dargestellt</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Kommentare</h2>
+                        <ul>
+                            <li>Kommen eher aus der Welt der Blogs</li>
+                            <li>Mehrstufig vs. einstufig</li>
+                            <li>Abschltbar</li>
+                            <li>Oft nur für angemeldete Benutzer</li>
+                            <li>Gefahr von Kommentar SPAM (Askimet)</li>
+                            <li>Verknüpfung mit Social Media in beide Richtungen</li>
                         </ul>
                     </section>
 
@@ -1227,7 +1262,7 @@ page.10.wrap = &lt;h2&gt;|&lt;/h2&gt;
                         <ul>
                             <li>Ausgabe der Inhalte</li>
                             <li>Herzstück des CMS</li>
-                            <li>Im angemeldeten Zustan manchmal andere Ansicht verfügbar</li>
+                            <li>Im angemeldeten Zustand manchmal andere Ansicht verfügbar</li>
                             <li>Frontend-Editing</li>
                         </ul>
                     </section>
