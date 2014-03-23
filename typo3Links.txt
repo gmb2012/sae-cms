@@ -1,0 +1,7 @@
+Mehrsprachigkeit: http://t3n.de/magazin/konfiguration-typo3-backends-mehrere-sprachen-222461/
+Dateien in Typo3: http://www.quintinity.de/typo3-cms/typo3-benutzerhandbuch/dateien-hochladen.html
+Extensions installieren: http://typo3.uni-koeln.de/typo3-extension-installieren.html?&L=1
+Typo 3 Templates installieren: https://www.youtube.com/watch?v=G5asjyjMPVY
+Typo 3 Templates: http://t3n.de/news/sechs-quellen-kostenlose-typo3-templates-236936/
+Statistik mit Typo 3: http://typo3blogger.de/webseiten-statistiken-in-typo3/
+SEO für Typo 3: http://t3n.de/magazin/seo-typo3-schritt-schritt-oben-226800/
